@@ -13,5 +13,3 @@
 git push -u origin main (githuba gonderiri sonda)
 
 ## HTML 
--yoxlamaq ucun bir iki soz
--sjjsjsjs
