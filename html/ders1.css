@@ -1,0 +1,17 @@
+#top-bar{
+    width: 1000px;
+    height: 200px;
+    background-color:blue;
+
+}
+#navbar{
+    width: 1000px;
+    height: 200px;
+    background-color: red;
+
+}
+#slider{
+    width: 1000px;
+    height: 200px;
+    background-color: green;
+}
