@@ -15,3 +15,16 @@
     height: 200px;
     background-color: green;
 }
+/* id si 'numune' olan section*/
+#numune {
+    margin-top: 10px;
+    background:yellow;
+    padding: 20px;
+    border: 1px solid black;
+
+}
+#numune .h1{
+    margin:5px;
+    padding: 10px;
+    border: blue solid 2px;
+}

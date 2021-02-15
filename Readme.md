@@ -9,7 +9,12 @@
 ## bezi GIT komutlari(DOSYAMIZDA deyisiklik edsek ardicil olaraq asaqidakilari icra et)
 
 -git status (dosyamizin hani veziyete hansi statusda olduqun gorsedir)
+-git add . (dosyamizda deyisikler olubsa elave etmek ucun)
 -git commit -m 'comentimiz' (ediyimiz deyisiklere coment qoyuymaq ucun)
 git push -u origin main (githuba gonderiri sonda)
 
-## HTML 
+
+## HTML ve Css edilenler (paralel olaraq)
+-link tagi ile  'ders1.css' 'ders1.html' arasinda elaqe quruldu 
+-section ve divler secildi
+-secilen classlara ve id lere style verildi
