@@ -11,7 +11,7 @@
 -git status (dosyamizin hani veziyete hansi statusda olduqun gorsedir)
 -git add . (dosyamizda deyisikler olubsa elave etmek ucun)
 -git commit -m 'comentimiz' (ediyimiz deyisiklere coment qoyuymaq ucun)
-git push -u origin main (githuba gonderiri sonda)
+-git push -u origin main (githuba gonderiri sonda)
 
 
 ## HTML ve Css edilenler (paralel olaraq)
