@@ -1,0 +1,36 @@
+body{
+    margin:0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* Header bolmesi */
+
+/* Header info bolmesi */
+.header-info{
+    /* background-color: #164db5; */
+    background-color: #333;
+    padding:10px 0px;
+    
+    color:#ffffff;
+}
+.header-container{
+    width:1350px;
+    margin: 0px auto;
+    /* border:1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+.header-contact-info i{
+    color:#00bcd4;
+    margin-right:10px;
+}
+.header-contact-info span{
+    margin-right:10px;
+}
+
+.header-social-icons i{
+    margin:0px 5px;
+}
+/* Header navbar bolmesi */
+.header-navbar{
+    background-color: rgb(78, 199, 41);
+}
