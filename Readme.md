@@ -48,3 +48,18 @@
     - text-decoration
     
 
+## Day04
+- template Slider section HTML stukturu quruldu
+- Sildere css style verdik
+- mutamadi  olaraq isdifade edildi
+    - display:inline-block ,(block)
+    - position:absolute ,(relative)
+    - line-height
+    - transform:translate()
+    - background-image
+    - background-position
+    - background-repeat
+    - background-size
+    - border
+    - outline***
+    - text-align
