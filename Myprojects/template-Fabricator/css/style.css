@@ -56,6 +56,7 @@ img {
 .clear {
     clear: both;
 }
+/*Reset CSS*/
 
 
 /*Header info */
@@ -66,35 +67,50 @@ img {
 }
 .header-info-container{
 	width: 100%;
-	height: 50px;
+	line-height: 55.5px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	
 }
 .header-info-container-contact{
-	margin-left: 70px;
+	margin-left: 94px;
 }
-.header-info-container-contact i, .header-info-container-icon i {
-	margin:0 15px;
-	
-	
-}
-.header-info-container-contact i{
-	font-size: x-large;
+.header-info-container-contact span{
+	color: #dddddd;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
 	
 
 }
-.header-info-container-icon{
-	margin-right: 70px;
+.header-info-container-contact i {
+	margin: 0 15px 0 25px;
+	
+	
 }
+
+.header-info-container-contact i{
+	font-size: 20px;
+
+
+}
+.header-info-container-icon {
+	margin-right: 87px;
+}
+.header-info-container-icon i{
+	font-size: 18px;
+	margin: 0 13px ;
+
+	
+}
+/*Header info end*/
 
 
 /*.header-info navbar*/
 .header-nav-container{
-	background:#1C1D1F;
+	
 	color: white;
-	height: 150px;
+	height: 155px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -121,5 +137,85 @@ img {
 }
 .header-nav-buton ul li{
 	margin: 0 20px;
+
+}
+/*.header-info navbar end*/
+
+/*slider section*/
+#slider{
+	background: violet;
+	height: 820px;
+	
+	position:relative;
+	
+	
+}
+.slider-content{
+	width: 100%;
+	height: 100%;
+	background-image: url(/Myprojects/template-Fabricator/img/slider-backraund.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: left center;
+	position:absolute;
+    top:0px;
+    left: 0px;	
+	
+	
+
+}
+.content-inner{
+	
+	height:319px;
+	position: absolute;
+	top: 250px;
+	left: 100px;
+
+
+} 
+
+.content-inner-title{
+	
+	font-family: 'Lato', sans-serif;
+    font-size: 64px;
+    line-height: 1.1875;
+    color: white;
+    letter-spacing: 0em;
+	margin: 30px 0 0 0;
+
+	
+	
+	
+
+}
+.contet-inner-desc{
+	font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #dddddd;
+    letter-spacing: 0em;
+	margin:41px 0 50px ;
+}
+.contet-inner-button {
+	width: 1140px;
+	height: 57px;
+	
+	font-family: 'Lato', sans-serif;
+	
+	
+	
+}
+.contet-inner-button a {
+	margin-right: 30px;
+	display: inline-block;
+	width: 245px;
+	height: 57px;
+	border: 2px solid white;
+	color: white;
+	font-weight: 600;
+    line-height: 57px;
+	text-align: center;
+	
 
 }
