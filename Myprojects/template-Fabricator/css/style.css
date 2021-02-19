@@ -67,7 +67,7 @@ img {
 }
 .header-info-container{
 	width: 100%;
-	line-height: 55.5px;
+	line-height: 53.5px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -128,24 +128,26 @@ img {
 }
 .header-nav-buton ul{
 	display: flex;
-	font-size: 16px;
-    font-family: Lato, sans-serif;
-    font-weight: 700;
-    line-height: 1.875em;
 	
 
 }
 .header-nav-buton ul li{
-	margin: 0 20px;
+	font-size: 15px;
+    font-weight: 700;
+    line-height: 1.9em;
+    font-family: 'Lato', sans-serif;
+    margin: 0px 28px 0 0;
+}
+
+.header-nav-buton ul li i{
+	margin: 0 0 0 10px;
 
 }
 /*.header-info navbar end*/
 
 /*slider section*/
 #slider{
-	background: violet;
 	height: 820px;
-	
 	position:relative;
 	
 	
@@ -153,27 +155,33 @@ img {
 .slider-content{
 	width: 100%;
 	height: 100%;
-	background-image: url(/Myprojects/template-Fabricator/img/slider-backraund.jpg);
-	background-repeat: no-repeat;
+	background: url(/Myprojects/template-Fabricator/img/slider-backraund.jpg) center center no-repeat  ;
 	background-size:cover;
-	background-position: left center;
-	position:absolute;
-    top:0px;
-    left: 0px;	
+	
+
+	
+    
 	
 	
 
 }
 .content-inner{
 	
+	
 	height:319px;
+	width: 100%;
 	position: absolute;
 	top: 250px;
-	left: 100px;
+
+	/*left: 100px;*/
 
 
 } 
-
+.contet-inner-text{
+	position: absolute;
+	left: 100px;
+	
+}
 .content-inner-title{
 	
 	font-family: 'Lato', sans-serif;
@@ -187,6 +195,15 @@ img {
 	
 	
 
+}
+.contet-inner-hr{
+	
+	
+	border-left: 6px solid #FFBA00;
+	padding:0 0 0 40px;
+	margin-left:60px ;
+	
+	
 }
 .contet-inner-desc{
 	font-family: 'Lato', sans-serif;
@@ -219,3 +236,20 @@ img {
 	
 
 }
+
+
+.button-byfabricator{
+	background: #FFBA00;
+	color: #272C4C !important;
+	border:none !important ;
+}
+.contet-inner-button a:hover{
+	transition:all .3s ease;
+	background: white;
+	color: #4555b9;
+}
+.button-byfabricator:hover{
+	background: #4555b9 !important;
+	color:white !important; 
+}
+/*END slider section */
