@@ -12,7 +12,7 @@ body{
     padding:15px 0px;  
     color:#ffffff;
 }
-.header-container{
+.header-container, .callToAction-container{
     width:1350px;
     margin: 0px auto;
     /* border:1px solid red; */
@@ -36,7 +36,9 @@ body{
     /* border:1px solid red; */
     padding:20px 0px;
 }
+.navbar-logo{
 
+}
 
 .navbar-logo img{
     height:60px;
@@ -129,4 +131,106 @@ color:white;
     border:none;
     outline:none;
     margin:0px 60px;
+}
+
+/* Call To Action style */
+#callToAction{
+    background:url('../img/bg-image-7.jpg') center center no-repeat;
+    background-size: cover;
+    padding:30px 0px;
+}
+.callToAction-container h1{
+    color:white;
+    font-size:2em;
+    line-height: 30px;
+}
+.callToAction-container button{
+    border:none;
+    outline:none;
+    background:white;
+    padding:15px 25px;
+    cursor: pointer;
+    transition:all .3s ease;
+
+}
+
+.callToAction-container button:hover{
+    background:black;
+    color:white;
+}
+.services-container{
+    width:1350px;
+    margin: 0px auto;
+    padding:30px 0px;
+}
+.services-row{
+    display: flex;
+    justify-content: space-between;
+    margin:10px 0px;
+
+}
+
+.service-item{
+
+    width:calc(100%/3);
+    margin:0px 10px;
+    padding:10px;
+    transition:all .3s ease;
+    display: flex;
+}
+.service-item:hover{
+    background:#00bcd4
+}
+.section-heading{
+    
+    margin:0 auto;
+    /* border-bottom:1px solid #00bcd4;  */
+}
+.section-heading h1{
+    text-align:center;
+    text-transform: uppercase;
+    margin:10px 0px;
+    font-weight: 400;
+}
+.section-heading hr{
+    width:30px;
+    height: 1px;
+    border: none;
+    background:#00bcd4;
+}
+.item-icon{
+    padding:0px 20px;
+    font-size:3.5em;
+    color:#00bcd4;
+    transition:all .3s ease;
+}
+
+.item-content{
+    
+    
+}
+.item-content h3{
+    color:black;
+    transition:all .3s ease;
+}
+
+.item-content p{
+    color:gray;
+    transition:all .3s ease;
+}
+
+.service-item:hover .item-icon{
+    color:white;
+    
+}
+
+.service-item:hover .item-content h3{
+    color:white;
+}
+
+.service-item:hover .item-content p{
+    color:white;
+}
+.item-content h3:hover{
+    color:black !important;
 }
