@@ -325,8 +325,64 @@ img {
 }
 .elementor-row-img-h4 h4{
 	font-size: 24px;
-	font-family: 'Lato',sans-serif;
+	font-family: 'Lato', sans-serif;
 	color: #4555b9;
 	font-weight: 600;
 
+}
+/* end Section Home-layouts*/
+
+/*start elementor-boxed*/
+.elementor-boxed{
+	display: flex;
+	background: #4555b9;
+	
+	
+
+}
+.elemetor-boxed-container{
+	display: flex;
+	color: #ffffff;
+	
+	
+	
+	margin-right: auto;
+    margin-left: auto;
+    position: relative;
+	
+
+}
+.elementor-boxed-populat{
+	color: #ffffff;
+	height: 292px;
+	width: 379.98px;
+	padding: 117px 16px;
+	text-align: center;
+	
+
+	
+	
+
+}
+.elementor-boxed-populat-border{
+	border-left: 0.5px solid #6a77c7 ;
+	border-right: 0.5px solid #6a77c7 ;
+
+}
+.elementor-boxed-populat span{
+	font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22222;
+    font-family: Lato, sans-serif;
+    letter-spacing: 0em;
+    text-align: inherit;
+
+}
+
+.elementor-boxed-populat div i {
+	font-size: 40px;
+	color: #FFBA00;
+	margin: 0 0 15px;
+	
 }
