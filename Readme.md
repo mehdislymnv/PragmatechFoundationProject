@@ -63,3 +63,11 @@
     - border
     - outline***
     - text-align
+## Day05
+
+- isdifade edildi:
+    - :hover
+    - !important
+    - transition
+    - hr
+    - cursor

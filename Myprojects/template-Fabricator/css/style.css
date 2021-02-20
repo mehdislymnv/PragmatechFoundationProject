@@ -244,7 +244,7 @@ img {
 	border:none !important ;
 }
 .contet-inner-button a:hover{
-	transition:all .3s ease;
+	transition:all .6s ease;
 	background: white;
 	color: #4555b9;
 }
@@ -253,3 +253,80 @@ img {
 	color:white !important; 
 }
 /*END slider section */
+
+/*Start Section Home-layouts*/
+#Section-boxed{
+	background:#F1F4FC;
+	width: 1349px;
+	height: 1102px;
+}
+.Home-layouts-container{
+	position: relative;
+	top: 110px;
+	
+}
+.Home-layouts-heading-hr{
+	
+	border-left: 6px solid #FFBA00;
+	padding:0 0 0 40px;
+	margin-left:60px ;
+
+}
+.layouts-row{
+	display: flex;
+}
+
+.Home-layouts-heading{
+	font-size: 36px;
+	font-family:'Lato',sans-serif;
+	color: #292929;
+	font-style: normal;
+    font-weight: 700;
+	width: 1105px;
+	height: 42px;
+}
+
+.elemantor-row{
+	
+	width: 572.84px;
+	height: 355px;
+	position: relative;
+	left: 90px;
+	top: 43px;
+	margin-right: 21px;
+	margin-bottom: 60px;	
+}
+.elementor-row-img{
+	width: 547px;
+	height: 345px;
+	background: url(/Myprojects/template-Fabricator/img/minibackrand.jpg) center center no-repeat !important;
+	background-size:cover;
+}
+
+.minibackrand2{
+	background: url(/Myprojects/template-Fabricator/img/minibackrand2.jpg) center center no-repeat !important;
+	background-size:cover;
+
+}
+.minibackrand3{
+	background: url(/Myprojects/template-Fabricator/img/minibackrand3.jpg) center center no-repeat !important;
+	background-size:cover;
+}
+.minibackrand4{
+	background: url(/Myprojects/template-Fabricator/img/minibackrand4.jpg) center center no-repeat !important;
+	background-size:cover;
+
+}
+
+.elementor-row-img-h4{
+	border-left: 3px solid #FFBA00;
+	line-height: 34px;
+	padding-left:20px ;
+}
+.elementor-row-img-h4 h4{
+	font-size: 24px;
+	font-family: 'Lato',sans-serif;
+	color: #4555b9;
+	font-weight: 600;
+
+}
