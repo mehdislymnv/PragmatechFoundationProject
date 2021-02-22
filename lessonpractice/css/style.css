@@ -15,7 +15,7 @@ body{
 .header-container, .callToAction-container{
     width:1350px;
     margin: 0px auto;
-    /* border:1px solid red; */
+    /* border:1px solid red;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,11 +63,11 @@ body{
     color:#c7c7c7;
 }
 
-/* slider section styles */
+/* slider section styles*/
 
 #slider{
     height:700px;
-    /* border:1px solid gray; */
+    /* border:1px solid gray;*/
     position:relative;
 }
 .slider-item{
@@ -175,7 +175,7 @@ color:white;
     transition:all .3s ease;
     display: flex;
 }
-.service-item:hover{
+.service-item:hover {
     background:#00bcd4
 }
 .section-heading{
@@ -198,15 +198,14 @@ color:white;
 .item-icon{
     padding:0px 20px;
     font-size:3.5em;
-    color:#00bcd4;
-    transition:all .3s ease;
+    color:#00bcd4 ;
+    transition:all .3s ;
 }
 
 
-.item-content h3{
-    color:black;
-    transition:all .3s ease;
-}
+
+
+
 
 .item-content p{
     color:gray;
@@ -218,13 +217,15 @@ color:white;
     
 }
 
-.service-item:hover .item-content h3{
+.service-item:hover .item-content h3 {
     color:white;
 }
 
 .service-item:hover .item-content p{
     color:white;
 }
-.item-content h3:hover{
+.item-content h3 span:hover{
+    transition:all 0.5s ease;
     color:black !important;
+    cursor: pointer;
 }

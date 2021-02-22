@@ -64,10 +64,23 @@
     - outline***
     - text-align
 ## Day05
-
+- layhenize sectionlar elave edildi (en azi 3 setion)
+- Numune template de deyisiklik edildi
 - isdifade edildi:
     - :hover
     - !important
     - transition
     - hr
     - cursor
+
+
+
+
+# Week03
+
+## Day01
+- 
+- 
+- 
+- 
+

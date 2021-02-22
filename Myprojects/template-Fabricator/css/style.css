@@ -95,8 +95,19 @@ img {
 
 
 }
-.header-info-container-icon {
+.header-info-container-icon  {
 	margin-right: 87px;
+	
+	
+	
+}
+.header-info-container-icon :hover{
+	color: #FFBA00;
+	cursor:pointer;
+	transition: all .5s ease;
+	
+	
+	
 }
 .header-info-container-icon i{
 	font-size: 18px;
@@ -115,8 +126,12 @@ img {
 	justify-content: space-between;
 	align-items: center;
 }
+
 .header-nav-logo{
 	margin-left: 100px;
+}
+.header-nav-logo:hover{
+	cursor: pointer;
 }
 .header-nav-logo span{
 	font-size: xx-large;
@@ -125,6 +140,7 @@ img {
 	margin-right: 100px;
 	display: flex;
 	align-items: center;
+	
 }
 .header-nav-buton ul{
 	display: flex;
@@ -134,12 +150,29 @@ img {
     font-weight: 700;
     line-height: 1.9em;
     margin: 0px 28px 0 0;
+	transition: all .4s ease-out;
+	cursor: pointer;
 }
 
 .header-nav-buton ul li i{
 	margin: 0 0 0 10px;
 
 }
+.header-nav-buton ul li:hover{
+	color: #FFBA00;
+	
+	
+}
+.nav-buton-icon{
+	cursor: pointer;
+	transition: all .45s ease-out;
+
+}
+.nav-buton-icon:hover{
+	color: #FFBA00;
+	
+}
+
 /*.header-info navbar end*/
 
 /*slider section*/
@@ -201,6 +234,7 @@ img {
 	font-weight: 600;
     line-height: 57px;
 	text-align: center;
+	transition:all .6s ease;
 }
 
 
@@ -210,7 +244,7 @@ img {
 	border:none !important ;
 }
 .contet-inner-button a:hover{
-	transition:all .6s ease;
+	
 	background: white;
 	color: #4555b9;
 }
@@ -262,6 +296,13 @@ img {
 	height: 345px;
 	background: url(/Myprojects/template-Fabricator/img/minibackrand.jpg) center center no-repeat !important;
 	background-size:cover;
+	transition-duration: .3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
+.elementor-row-img:hover{
+	transform: translateY(-8px);
+	
 }
 
 .minibackrand2{
@@ -286,6 +327,14 @@ img {
 	font-size: 24px;
 	color: #4555b9;
 	font-weight: 600;
+}
+.elementor-row-img-h4 h4 span{
+	transition: 0.45s ease all;
+	cursor: pointer;
+}
+.elementor-row-img-h4 h4 span:hover{
+	color: #272C4C;
+	
 }
 /* end Section Home-layouts*/
 
