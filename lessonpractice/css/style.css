@@ -36,9 +36,6 @@ body{
     /* border:1px solid red; */
     padding:20px 0px;
 }
-.navbar-logo{
-
-}
 
 .navbar-logo img{
     height:60px;
@@ -205,10 +202,7 @@ color:white;
     transition:all .3s ease;
 }
 
-.item-content{
-    
-    
-}
+
 .item-content h3{
     color:black;
     transition:all .3s ease;
