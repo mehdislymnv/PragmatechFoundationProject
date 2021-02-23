@@ -84,3 +84,6 @@
 - 
 - 
 
+## Day02
+- Layihənin bir sectioni ucun grid sistemini tetbig edildi.
+- Layihede tekrarlanan css kodlarini ayri ortaq classlar sekline getirildi
