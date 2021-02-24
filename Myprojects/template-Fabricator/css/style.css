@@ -494,6 +494,77 @@ img {
     font-weight: 600;
 
 }
+/*End statistics*/
+
+/*Start Dedicated-Support*/
+.Support-container{
+	margin: 100px 0 0 0;
+
+}
+
+.Support-container div{
+	display: flex;
+	justify-content: center;
+	
+	
+}
+.Support-container-icon i{
+	transition: all .5s ease;
+	font-size: 61px;
+	color:#4555b9;
+	padding-bottom: 30px;
+}
+.Support-container-icon i:hover{
+	color: #FFBA00;
+}
+.Support-container-text{
+	color: #292929;
+	font-size: 36px;
+	font-weight: 600;
+}
+.Support-container-text1{
+	margin-top: 20px;
+	color: #737373;
+	font-size: 16px;
+}
 
 
-
+.wrapper a{
+	display: block;
+	padding: 17px 55px;
+	margin: 40px 0 90px 0;
+	font-family: sans-serif;
+	text-decoration: none;
+	color: #333;
+	background: #FFBA00;
+	
+	
+	text-align: center;
+	position: relative;
+	transition: all .35s;
+  }
+  
+.wrapper a span{
+	position: relative;
+	z-index: 2;
+	font-weight:600;
+  }
+  
+.wrapper a:after{
+	position: absolute;
+	content: "";
+	bottom:  0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	background: #4555b9;
+	transition: all .35s;
+  }
+  
+.wrapper a:hover{
+	color: #fff;
+  }
+  
+.wrapper a:hover:after{
+	height:  100%;
+  }
