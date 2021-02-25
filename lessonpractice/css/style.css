@@ -11,6 +11,49 @@ body {
     padding: 30px 0px;
 }
 
+.section-heading {
+    margin: 0 auto;
+    /* border-bottom:1px solid #00bcd4;  */
+}
+
+.section-heading h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0px;
+    font-weight: 400;
+}
+
+.section-heading hr {
+    width: 30px;
+    height: 1px;
+    border: none;
+    background: #00bcd4;
+}
+
+.btn {
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+    color: black;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .3s ease;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: black;
+    color: white;
+}
+
+.btn-second {
+    background: #00bcd4;
+}
+
+.btn-first {
+    background: #f8f8f8;
+}
+
 
 /* Header bolmesi */
 
@@ -204,25 +247,6 @@ body {
     background: #00bcd4
 }
 
-.section-heading {
-    margin: 0 auto;
-    /* border-bottom:1px solid #00bcd4;  */
-}
-
-.section-heading h1 {
-    text-align: center;
-    text-transform: uppercase;
-    margin: 10px 0px;
-    font-weight: 400;
-}
-
-.section-heading hr {
-    width: 30px;
-    height: 1px;
-    border: none;
-    background: #00bcd4;
-}
-
 .item-icon {
     padding: 0px 20px;
     font-size: 3.5em;
@@ -342,4 +366,184 @@ body {
 .statistics-item p {
     font-size: 1.4em;
     padding: 0px 0px;
+}
+
+
+/* about us section styles */
+
+#about {
+    background-color: #f8f8f8;
+    height: 700px;
+    position: relative;
+}
+
+.about-bg-image {
+    width: 50%;
+    height: 760px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background: url('../img/bg-image-1.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.about-item {
+    padding: 10px;
+}
+
+.about-detail {
+    padding-right: 100px;
+}
+
+.about-detail .section-heading {
+    margin-left: 0px;
+}
+
+.about-detail .section-heading h1 {
+    text-align: left;
+}
+
+.about-detail .section-heading hr {
+    margin-left: 0px;
+}
+
+.about-item-icon {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.about-item-content h3 {
+    margin-top: 0px;
+}
+
+.about-item:hover {
+    background: #00bcd4;
+    color: white;
+}
+
+.persentage-item progress {
+    width: 100%;
+    background: red;
+}
+
+progress::-webkit-progress-value {
+    background: #00bcd4
+}
+
+progress::-webkit-progress-var {
+    background: black;
+}
+
+.persentage-item p {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* work section styles */
+
+#work {
+    background-color: #f8f8f8;
+}
+
+.work-item {
+    height: 360px;
+    margin: 0px 15px;
+    transition: all .5s ease;
+}
+
+.work-item:hover {
+    transform: rotateY(180deg);
+}
+
+.work-item img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+}
+
+
+/* extra info styles */
+
+#extraInfo {
+    height: 380px;
+    background: url('../img/bg-image-8.jpg') center center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.extraInfo-detail .section-heading {
+    margin-bottom: 40px;
+}
+
+.extraInfo-detail .section-heading h1 {
+    color: white;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.extraInfo-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*  team styles*/
+
+#team {
+    background: #f8f8f8;
+}
+
+.team-item {
+    margin: 0px 15px;
+    text-align: center;
+}
+
+.team-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.team-item h4 {
+    color: #00bcd4;
+    font-style: italic;
+}
+
+
+/* contact form styles */
+
+#contact-form {
+    background-color: #f8f8f8;
+    height: 700px;
+    position: relative;
+}
+
+.contact-form-bg-image {
+    width: 50%;
+    height: 760px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: url('../img/bg-image-1.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.contact-form {
+    padding-left: 100px;
+}
+
+.contact-form .section-heading {
+    margin-left: 0px;
+}
+
+.contact-form .section-heading h1 {
+    text-align: left;
+}
+
+.contact-form .section-heading hr {
+    margin-left: 0px;
 }
