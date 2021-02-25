@@ -181,7 +181,7 @@ img {
 
 /*slider section*/
 #slider{
-	height: 820px;
+	height: 510px;
     background: url(/Myprojects/template-Fabricator/img/slider-backraund.jpg) center center no-repeat;
 	background-attachment: fixed;
 	background-size:cover;
@@ -218,4 +218,48 @@ img {
 	border-left: 6px solid #FFBA00;
 	padding:0 0 0 40px;
 	margin-left:60px ;
+}
+
+/*Start CONTACTS*/
+
+.form-icon{
+	
+	background: #FFBA00;
+	padding: 25px;
+	border-radius: 50%;
+	
+
+}
+.fa-map-marker-alt{
+	
+	width: 50px;
+}
+.fa-map-marker-alt::before{
+	display: flex;
+	justify-content: center;
+}
+.form-icon i{
+	color:white;
+	font-size: 50px;
+}
+
+.col-4 h6{
+	font-weight: 600;
+	color: #292929;
+	font-size: 18px;
+	
+}
+.col-4 span{
+	color: #1e1d24;
+}
+.form-contact {
+	margin: auto 20px;
+	
+}
+.row-form{
+	margin: 80px 100px;
+	
+}
+.forms-boxed label ,input{
+	border: 1px solid red;
 }
