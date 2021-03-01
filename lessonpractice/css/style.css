@@ -705,3 +705,40 @@ progress::-webkit-progress-var {
     margin-top: -90px;
     height: 400px;
 }
+
+
+/* ABOUT PAGE */
+
+#about-title {
+    height: 350px;
+    /* background: url('../img/parallax-2.jpg') center center no-repeat;
+    background-size: cover; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.item {
+    height: 200px;
+    border: 1px solid red;
+}
+
+.item img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 576px) {
+    #about-title {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 576px) and (max-width:1000px) {
+    #about-title {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1350px) {}
