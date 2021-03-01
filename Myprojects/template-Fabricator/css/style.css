@@ -443,7 +443,7 @@ img {
 /*Start statistics*/
 
 #statistics{
-	background: url(/Myprojects/template-Fabricator/img/index-bg-1.jpg) center center no-repeat;
+	background: url(../img/index-bg-1.jpg) center center no-repeat;
 	background-attachment: fixed;
 	background-size:cover;
 	
