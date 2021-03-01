@@ -182,7 +182,7 @@ img {
 /*slider section*/
 #slider{
 	height: 510px;
-    background: url(/Myprojects/template-Fabricator/img/slider-backraund.jpg) center center no-repeat;
+    background: url(../img/slider-backraund.jpg) center center no-repeat;
 	background-attachment: fixed;
 	background-size:cover;
 	
