@@ -145,7 +145,8 @@ img {
 .header-nav-buton ul{
 	display: flex;
 }
-.header-nav-buton ul li{
+.header-nav-buton ul li a{
+	color: white;
 	font-size: 15px;
     font-weight: 700;
     line-height: 1.9em;
@@ -154,11 +155,11 @@ img {
 	cursor: pointer;
 }
 
-.header-nav-buton ul li i{
+.header-nav-buton ul li i {
 	margin: 0 0 0 10px;
 
 }
-.header-nav-buton ul li:hover{
+.header-nav-buton ul li a:hover{
 	color: #FFBA00;
 	
 	
