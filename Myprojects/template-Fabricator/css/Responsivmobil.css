@@ -33,4 +33,27 @@
         border: none;
         width: 100%;
     }
+    /*statistika*/
+    .container-statistika{
+       
+      
+     
+    }
+    
+    .row-r{
+        display: block;
+        flex-direction: column;
+        padding: 40px 0;
+        
+    }
+    .colr-3{
+        width: 100%;
+        padding: 0;
+    }
+    .statistics-item div:first-child{
+        padding: 20px 0;
+        font-size: 48px;
+
+    }
+   
 }

@@ -460,12 +460,11 @@ img {
 }
 .container-statistika{
 	max-width: 1140px;
-	
-	
-    
 	margin: 0 auto;
+	
 }
-.statistics-item{
+/*statistics-item*/
+.colr-3{
 	border-style: solid;
     border-width: 0px 1px 0px 0px;
     border-color: rgba(255,255,255,0.2);
