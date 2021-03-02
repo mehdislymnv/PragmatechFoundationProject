@@ -1,0 +1,36 @@
+@media (max-width:768px){
+    .layouts-row{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        
+        height: auto;
+        margin: 0 0 0 15px;
+      
+        
+    }
+    .Home-layouts-heading-hr{
+        height: 31px;
+        border-left: 4px solid #FFBA00;
+        margin:  0 0 70px 10px;
+      
+    }
+    .Home-layouts-heading-hr div{
+        font-size: 27px;
+    }
+    .elemetor-boxed-container{
+        display: inline-block;
+        padding: 50px 0; 
+        
+        
+        
+    }
+    .elementor-boxed-populat{
+        height: auto;
+        padding: 30px 0;
+        
+        border: none;
+        width: 100%;
+    }
+}

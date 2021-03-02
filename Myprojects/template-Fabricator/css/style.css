@@ -1,3 +1,5 @@
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -64,18 +66,18 @@ img {
 .header-info{
 	background:#272C4C;
 	color:white;
+	width: 100%;
 
 }
 .header-info-container{
-	width: 100%;
-	line-height: 53.5px;
+	width: 90%;
+	padding: 17.5px 0;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	flex-wrap: wrap;
+	margin: 0 auto;
 	
-}
-.header-info-container-contact{
-	margin-left: 94px;
+	
 }
 .header-info-container-contact span{
 	color: #dddddd;
@@ -84,6 +86,7 @@ img {
 	
 
 }
+
 .header-info-container-contact i {
 	margin: 0 15px 0 25px;
 	
@@ -95,12 +98,8 @@ img {
 
 
 }
-.header-info-container-icon  {
-	margin-right: 87px;
-	
-	
-	
-}
+
+
 .header-info-container-icon :hover{
 	color: #FFBA00;
 	cursor:pointer;
@@ -258,20 +257,26 @@ img {
 /*Start Section Home-layouts*/
 #Section-boxed{
 	background:#F1F4FC;
-	width: 1349px;
-	height: 1102px;
+	
 }
 .Home-layouts-container{
-	position: relative;
-	top: 110px;
+	margin: 0 auto;
+	padding-top:100px ;
+	width: 100%;
+	
+	
+	
 }
 .Home-layouts-heading-hr{
 	border-left: 6px solid #FFBA00;
 	padding:0 0 0 40px;
 	margin-left:60px ;
+	margin-bottom: 60px ;
 }
 .layouts-row{
 	display: flex;
+	margin: 0 91px;
+	
 }
 
 .Home-layouts-heading{
@@ -279,24 +284,26 @@ img {
 	color: #292929;
 	font-style: normal;
     font-weight: 700;
-	width: 1105px;
+	width: 100%;
 	height: 42px;
 }
 
 .elemantor-row{
-	width: 572.84px;
-	height: 355px;
-	position: relative;
-	left: 90px;
-	top: 43px;
+	/*width: 572.84px;*/
+	
 	margin-right: 21px;
 	margin-bottom: 60px;	
 }
+
+.elementor-row-img{
+
+
+}
 .elementor-row-img img{
-	width: 547px;
 	height: auto;
+    max-width: 100%;
 	background:center center no-repeat ;
-	background-size:cover;
+	
 	transition: all .3s ease-out;
 	padding-bottom: 16px;
    
@@ -332,20 +339,23 @@ img {
 .elementor-boxed{
 	display: flex;
 	background: #4555b9;
+	
 }
 .elemetor-boxed-container{
 	display: flex;
 	color: #ffffff;
-	margin-right: auto;
-    margin-left: auto;
-    position: relative;
+	margin: 0 auto;
+	width: 90%;
+  
 }
 .elementor-boxed-populat{
+	
 	color: #ffffff;
 	height: 292px;
-	width: 379.98px;
+	width: 33.33%;
 	padding: 117px 16px;
 	text-align: center;
+
 	
 
 	
