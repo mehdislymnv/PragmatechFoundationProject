@@ -55,5 +55,32 @@
         font-size: 48px;
 
     }
+    /*Header info*/
+    .header-info-container-contact{
+        width: 100%;
+    }
+    .header-info-container-contact span{
+        margin: 15px auto;
+        display: block;
+        text-align: center;
+       
+    }
    
+   .header-info-container-icon{
+    margin: 10px auto;
+      
+   }
+
+   /*icon menu*/
+   .header-info-container .icon-menu{
+       display:block;
+      cursor: pointer;
+       box-shadow: 0 0 5px rgb(120 136 236);
+       color: #000000;
+       background-color: #ffffff;
+       position: fixed;
+       z-index: 1;
+       
+
+   }
 }
