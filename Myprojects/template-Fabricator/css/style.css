@@ -146,9 +146,7 @@ img {
 	align-items: center;
 }
 
-.header-nav-logo{
-	margin-left: 100px;
-}
+
 .header-nav-logo:hover{
 	cursor: pointer;
 }
@@ -156,7 +154,7 @@ img {
 	font-size: xx-large;
 }
 .header-nav-buton{
-	margin-right: 100px;
+	
 	display: flex;
 	align-items: center;
 	
@@ -202,19 +200,28 @@ img {
 }
 .slider-content{
 	width: 100%;
+	
 	height: 100%;
 	background: url(../img/slider-backraund.jpg) center center no-repeat  ;
 	background-size:cover;
 }
 .content-inner{
-	height:319px;
-	width: 100%;
-	position: absolute;
-	top: 250px;
+	
+	
+	height:320px;
+	width: 90%;
+	margin: 100px  auto;
 } 
+
+.header-nav-container
+{
+	width: 90%;
+	
+	margin: 0 auto;
+}
 .contet-inner-text{
-	position: absolute;
-	left: 100px;
+	
+	
 }
 .content-inner-title{
 		
@@ -241,8 +248,8 @@ img {
 	margin:41px 0 50px ;
 }
 .contet-inner-button {
-	width: 1140px;
-	height: 57px;
+	
+	margin: 0 0 0 40px;
 }
 .contet-inner-button a {
 	margin-right: 30px;
@@ -283,6 +290,7 @@ img {
 	margin: 0 auto;
 	padding-top:100px ;
 	width: 100%;
+	
 	
 	
 	
@@ -423,10 +431,8 @@ img {
 }
 .templates-boxes-inside{
 	color: #292929;
-	padding:0 131px 0 0;
-	
-	
-	
+	width: 50%;
+
 	
 }
 .boxes-in-boxes-templates{
@@ -457,7 +463,7 @@ img {
 }
 
 .boxes-in-boxes-image2 img{
-	margin-left: 90px;
+
 	background:  center center no-repeat ;
 	background-position: center;
 	max-width: 100%;
@@ -465,6 +471,7 @@ img {
     box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 20%);
 	position: relative;
 	top: -53px;
+	left: 90px;
 	
 	
 }
