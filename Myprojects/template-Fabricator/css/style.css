@@ -431,8 +431,7 @@ img {
 	
 }
 .templates-boxes-inside{
-	background: salmon;
-	border: 2px solid red;
+
 	color: #292929;
 	width: 50%;
 
@@ -538,15 +537,19 @@ img {
 
 /*Start Dedicated-Support*/
 .Support-container{
-	margin: 100px 0 0 0;
+	
 
 }
 
 .Support-container div{
+	
 	display: flex;
 	justify-content: center;
 	
 	
+}
+.Support-container-icon{
+	padding: 100px 0 0 0;
 }
 .Support-container-icon i{
 	transition: all .5s ease;

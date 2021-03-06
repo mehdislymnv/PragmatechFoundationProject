@@ -144,20 +144,34 @@
         
     }
     .templates-boxes-inside{
-        width: 100%;
+       
+            width: 100%;
+            padding: 0 100px 0 0;
 
     }
     .templates-boxes-inside div{
        
 
-        width: 100%;
-      
-        
-       
-        
-      
-  
+
         
     }
-   
+    .Support-container-text{
+        text-align: center;
+        font-size: 27px;
+    }
+    .boxes-in-boxes-templates{
+        margin: 70px 0 0 10px;
+        padding: 0 0 0 10px;
+        border-left: 3px solid #FFBA00;
+        font-size: 27px;
+    }
+    .elementor-boxed{
+    margin: -140px 0 0 0;
+    }
+    .boxes-in-boxes-p{
+        margin-left: 20px;
+    }
+    .Support-container-text1{
+        padding: 0 30px;
+    }
 }   
