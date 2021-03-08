@@ -196,6 +196,7 @@ img {
 /*.header-info navbar end*/
 
 /*slider section*/
+
 #slider{
 	height: 510px;
     background: url(../img/slider-backraund.jpg) center center no-repeat;
@@ -236,52 +237,64 @@ img {
 	margin-left:60px ;
 }
 
+
+/*.header-info navbar end*/
+
+
 /*Start CONTACTS*/
 
-.form-icon{
-	box-sizing: border-box;
+.for-icon{
+	
 	background: #FFBA00;
-	padding: 25px;
+	padding: 22.5px;
 	border-radius: 50%;
 	
 
 
 	
 }
-.fa-map-marker-alt{
+.map-marker{
 	
 	width: 50px;
 }
-.fa-map-marker-alt::before{
+.map-marker::before{
 	display: flex;
 	justify-content: center;
 }
-.form-icon i{
+.for-icon i{
 	color:white;
 	font-size: 50px;
 }
 
-.col-4 h6{
+.col-44 h6{
 	font-weight: 600;
 	color: #292929;
 	font-size: 18px;
 	
 }
-.col-4 span{
+.col-44{
+	display: flex;
+
+}
+.col-44 span{
 	color: #1e1d24;
 }
-.form-contact {
+.for-contact {
 	margin: auto 20px;
 	
 }
 .row-form{
-	margin: 80px 100px;
+	
+	width: 100%;
+	padding:100px;
 	
 }
 .form-element-col-6{
 	margin: 0 auto;
+
 }
 .form-element{
+	
 	margin: 10px 50px;
 	background: #f6f6f6;
     border:1px solid #e3e2e7;
@@ -292,4 +305,87 @@ img {
 .form-element input,
 textarea{
 	background: #f6f6f6;
+	width: 100%;
+	
 }
+.rov-form-pandig{
+	padding:0px 50px 20px 50px ;
+
+}
+textarea{
+	min-height: 210px;
+	border: #e3e2e7 1px solid;
+	padding: 10px;
+}
+form div{
+	padding: 0 50px 0 0;
+}
+.form-message{
+	
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 85%;
+	color: #737373;
+	padding: 0 0 100px 0;
+	
+}
+
+.form-button-message{
+	
+    display: inline-block;
+    width: 182px;
+    padding: 14px 0;
+   
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    transition: all .6s ease;
+	background: #FFBA00;
+	cursor: pointer;
+}
+
+.form-button-message:hover {
+    background: #4555b9 ;
+    color: white ;}
+
+	@media (max-width:1000px){
+		.row-cantakt{
+			flex-direction: column;
+			padding: 0;
+					}
+		.col-44{
+			margin: 50px 10px ;
+		
+		}
+		.rov-form-pandig{
+			
+			display: block;
+			width: 100%;
+			
+		}
+		.form-element-col-6{
+			width: 100%;
+			
+		}
+		.form-element{
+			padding: 10px;
+			margin: 10px 0;
+		}
+		.rov-form-pandig {
+			padding: 50px 10px 20px 10px;
+		}
+		form div{
+			padding: 0;
+		}
+		/**/
+		.form-message{
+			display: block;
+			margin: -20px 0 0 10px;
+
+			
+		}
+		.form-message div{
+			padding:10px 0;
+		}
+	}
