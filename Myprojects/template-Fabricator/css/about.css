@@ -104,3 +104,97 @@
 
 
 /*projects section  'A Few Words'*/
+
+#project {
+  
+  margin: 50px 100px;
+ 
+}
+
+.project-item {
+  margin: 0px 15px;
+  text-align: center;
+  text-align: -webkit-left;
+  justify-content: stretch;
+}
+.project-item h3{
+  display: inline-block;
+  
+  cursor: pointer;
+  color: #4555B9;
+  margin: 10px 0px 10px 0;
+  padding: 0px 0 0px 20px;
+  border-left: 3px solid #FFBA00;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.36364;
+  transition: all .5s ease;
+  
+  
+  
+}
+.project-item h3:hover{
+  color: #272c4c;
+
+}
+.project-item h5{
+  
+}
+.image-frame {
+  width: 250px;
+  height: 250px;
+  position: relative;
+}
+
+.image-frame img {
+  width: auto;
+  height: 250px;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.img-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(69,85,185,0.5);
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  
+  transform: scale(.5);
+  opacity: 0;
+  transition: all .5s ease;
+}
+.img-overlay i{
+  padding: 0 10px ;
+  transition: all 0.5s ease;
+  
+}
+.img-overlay i:hover{
+  
+  color: #FFBA00;
+
+}
+
+
+.image-frame:hover .img-overlay {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.project-item h3 {}
+
+.project-item p {
+  
+}
+
+.project-item a {}
+
