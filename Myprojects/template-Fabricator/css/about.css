@@ -106,9 +106,24 @@
 /*projects section  'A Few Words'*/
 
 #project {
+  background: #f1f4fc;
+  padding: 50px 0 150px 0;
   
-  margin: 50px 100px;
  
+ 
+}
+.boxed-full-conteiner1{
+  margin: 0 100px;
+}
+.section-heading{
+  color: #292929;
+  border-left:5px solid #FFBA00 ;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.16667;
+  padding: 0 0 0  40px ;
+
+  margin: 30px 0 30px  -30px;
 }
 
 .project-item {
@@ -138,6 +153,8 @@
 
 }
 .project-item h5{
+  color: #b8b8b8;
+  padding:  10px 0px 10px 20px;
   
 }
 .image-frame {
@@ -193,8 +210,37 @@
 .project-item h3 {}
 
 .project-item p {
-  
+  color: #737373;
+  font-size: 16px;
+  padding: 10px 0 0 20px ;
 }
 
 .project-item a {}
+/*----------------*/
 
+/*HISTORY start*/
+.history-container{
+  margin: 30px auto;
+}
+.history-boxed{
+  margin: 40px auto;
+}
+.history-boxed i{
+  color: #4555b9;
+  font-size: 13px;
+  padding: 0 10px 0 5px ;
+
+}
+.history-boxed span{
+  color: #737373;
+  font-weight: 600;
+}
+.history-img-conteiner{
+  margin: -65px 0 0 0 ;
+}
+.history-img-boxed-1{
+  position: relative;
+  bottom: -50px;
+  right: -90px;
+  
+}
