@@ -23,3 +23,10 @@
 - Günümüzdə istifadə olunan Js,PHP,Python və C# dillərində ortaq istifadə olunan data növləri hansılardır və qısaca izahatlarını yazın
     String - bu məlumat növünə mətnlər daxildir
     Boolean - bu məlumat növünün iki dəyəri var true və false
+
+- Javascript operatorlar haqqinda umumi melumat elde etmek
+- Javascript 7
+- prompt metodu vasitesi ile ekrandan daxil edilen iki ədədin cəmini (a+b=c) olaraq yazdıran proqramın alqoritmini yazmaq
+- Alqoritmin hər addımını yazmadan öncə bunu javascript vasitəsi ilə nece reallaşdıracağınızı düşünün
+- Hər alqoritm addımının mütləq şəkildə dəqiq nəticəsi olmalıdır
+- Alqorimin addımlarını yazarkən hansı Javascript mövzularının öyrənilməsinə ehtiyac olduğunun siyahısını çıxardın
