@@ -115,6 +115,7 @@
 }
 .boxed-full-conteiner1{
   margin: 0 100px;
+  
 }
 .section-heading{
   color: #292929;
@@ -128,7 +129,7 @@
 }
 
 .project-item {
-  margin: 0px 15px;
+  margin: 5px 15px;
   text-align: center;
   text-align: -webkit-left;
   justify-content: stretch;
@@ -166,9 +167,10 @@
 }
 
 .image-frame img {
-  width: auto;
-  height: 250px;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  
   position: absolute;
   top: 0px;
   left: 0px;
@@ -210,7 +212,6 @@
   opacity: 1;
 }
 
-.project-item h3 {}
 
 .project-item p {
   color: #737373;
@@ -246,9 +247,18 @@
 }
 .history-img-conteiner{
   margin: -65px 0 0 0 ;
+  
+  background-size:cover ;
 }
+.history-img-conteiner div img{
+  height: auto;
+  max-width: 100%;
+  background: center center no-repeat;}
+
 .history-img-boxed-1{
+ 
   position: relative;
+  background-size:cover ;
   bottom: -50px;
   right: -90px;
   
@@ -266,11 +276,18 @@
    
 
   }
-  .col-6 .Rh3{
+  .col-6 .Rh3 {
     margin: 0 0 0 -15px;
     font-size: 27px;
     padding: 0px 0px 0 13px;
     border-left: 3px solid #FFBA00;
+  }
+  .section-heading .Rh3{
+    display: inline-block;
+    margin: 0 0 0 -15px;
+    font-size: 27px;
+    padding: 0px 0px 0 13px;
+    
   }
   .about-persantage{
   
@@ -285,11 +302,28 @@
     vertical-align: middle;
     display: inline-block;
     height: auto;
-    max-width: 200%;
+    max-width: 100%;
    
     
   }
+  .boxed-conteiner .col-6{
+    width: 100%;
+  }
+  /**/
+  .history-img-boxed-1{
+ 
+  position: relative;
+  background-size:cover ;
+  bottom: 0;
+  padding: 50px 0 20px 0 ;
+  right: 0;
   
+}
+  .history-img-boxed-2{
+    display: flex;
+    justify-content: flex-end;
+    
+  }
   
 
 }
@@ -307,4 +341,20 @@
   -ms-flex-direction: column-reverse;
    
 }
-} 
+.boxed-full-conteiner1 {
+  margin: 0 auto !important;
+  
+  flex-direction: column;
+  flex-wrap: wrap;
+
+
+}
+.boxed-full-conteiner1 .col-3{
+  width: 100%;
+}
+.project-item h3 , .project-item p{
+  
+
+
+}
+}
