@@ -27,6 +27,7 @@
 - Javascript operatorlar haqqinda umumi melumat elde etmek
 - Javascript 7
 - prompt metodu vasitesi ile ekrandan daxil edilen iki ədədin cəmini (a+b=c) olaraq yazdıran proqramın alqoritmini yazmaq
+
 - Alqoritmin hər addımını yazmadan öncə bunu javascript vasitəsi ilə nece reallaşdıracağınızı düşünün
 - Hər alqoritm addımının mütləq şəkildə dəqiq nəticəsi olmalıdır
 - Alqorimin addımlarını yazarkən hansı Javascript mövzularının öyrənilməsinə ehtiyac olduğunun siyahısını çıxardın
