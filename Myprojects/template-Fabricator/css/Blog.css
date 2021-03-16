@@ -1,0 +1,75 @@
+.container-blog{
+   
+    display: flex;
+   
+    
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px 80px; 
+}
+
+.post-boxeds{
+    
+    display: flex;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom:2px solid #f1f1f1 ;
+}
+.post-calendar{
+    width: 33.4%;
+    background: salmon;
+}
+.img1{
+    height: auto;
+    max-width: 100%;
+    background: no-repeat;
+    background-size: cover ;
+}
+
+.post-day .post-day1:hover{
+    background:#ffba00;
+    
+
+}
+
+.post-day .post-day1{
+    transition: ease all 0.5s;
+    margin: 0 20px;
+    border-radius: 100%;
+    padding: 10px 19.5px;
+    text-align: center;
+    background: #f1f1f1;
+
+}
+.post-day div span{
+    font-weight: 700;
+}
+
+.post-day .post-day2{
+    width: 42px;
+    font-weight: 700;
+    font-size: 35px;
+    color: #4555b9;
+}
+
+.post-text{
+    padding: 20px 0;
+}
+.post-text span{
+    color: #737373;
+    font-size: 16px;
+
+}
+.post-text h3{
+    font-weight: 700;
+    color: #292929;
+    font-size: 36px;
+    transition: all 0.5s ease;
+    line-height: 2.5rem;
+
+}
+.post-text h3:hover{
+    color: #4555b9;
+}
