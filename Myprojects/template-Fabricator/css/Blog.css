@@ -73,3 +73,10 @@
 .post-text h3:hover{
     color: #4555b9;
 }
+/**/
+.post-img .post-6{
+    height: 371px;
+    
+    width: 660px;
+    background-size: cover;
+}
