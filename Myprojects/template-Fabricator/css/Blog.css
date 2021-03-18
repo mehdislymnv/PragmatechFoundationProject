@@ -1,7 +1,7 @@
 .container-blog{
    
     display: flex;
-   
+   background: yellow;
     
     width: 100%;
     margin-left: auto;
@@ -9,17 +9,24 @@
     padding: 80px 80px; 
 }
 
+.container-blog2{
+    
+    width: 66.6%;
+}
 .post-boxeds{
-    
+    width: 100%;
     display: flex;
-    
+    background: blueviolet;
     padding-top: 50px;
     padding-bottom: 50px;
     border-bottom:2px solid #f1f1f1 ;
 }
 .post-calendar{
-    width: 33.4%;
-    background: salmon;
+    width: 34.6%;
+    padding:  0 0 0 50px;
+    background:blue;
+    border-left: 2px solid #f1f1f1 ;
+    margin-left: 20px;
 }
 .img1{
     height: auto;
@@ -79,4 +86,21 @@
     
     width: 660px;
     background-size: cover;
+}
+/**/
+.c-Categories h5{
+    padding: 26px 0;
+    font-size: 22px;
+    font-weight: 700;
+    color:#292929;
+}
+.c-Categories ul li{
+    color: #737373;
+    margin-top:5px ;
+    transition: all ease 0.5s;
+    cursor: pointer;
+    
+}
+.c-Categories ul li:hover{
+    color: #ffba00;
 }

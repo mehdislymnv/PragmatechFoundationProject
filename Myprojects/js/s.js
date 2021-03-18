@@ -1,5 +1,20 @@
 
-
+const secim=Number(prompt("1 cem, 2 ferq ,3 hasil ,4 nisbet  secim : "));
+a=Number(prompt("a : "));
+b=Number(prompt("b : "));
+switch(secim){
+    case 1:
+        console.log(alert("cem :" + Number(a+b)));
+        break
+    case 2:
+        console.log(alert("ferq :" + Number(a-b)));
+        break
+    case 3:
+        console.log(alert("hasil :" + Number(a*b)));
+        break
+    case 4:
+        console.log(alert("nisbet :" + Number(a/b)))
+}
 /*
 let qeydiyat={
     ad:prompt("Adiniz ? ")
