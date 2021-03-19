@@ -1,7 +1,7 @@
 .container-blog{
    
     display: flex;
-   background: yellow;
+   
     
     width: 100%;
     margin-left: auto;
@@ -16,7 +16,7 @@
 .post-boxeds{
     width: 100%;
     display: flex;
-    background: blueviolet;
+    
     padding-top: 50px;
     padding-bottom: 50px;
     border-bottom:2px solid #f1f1f1 ;
@@ -103,4 +103,33 @@
 }
 .c-Categories ul li:hover{
     color: #ffba00;
+}
+/*post-navigation*/
+.post-navigation{
+    padding: 50px 0;
+    display: flex;
+}
+.post-navigation div{
+    font-weight: 700;
+    padding: 14px 18px;
+    margin: 0 15px 0 0 ;
+    border: 1px solid #e3e2e7;;
+    transition: 0.5s ease all;
+    color: #737373;
+    cursor: pointer;
+}
+.post-navigation div:hover{
+    color: white;
+    background: #ffba00;
+
+}
+.next-bt{
+    color: #4555b9 !important;
+    border: none !important;
+   
+
+}
+.next-bt:hover{
+    background: none !important;
+    color: #ffba00 !important;
 }

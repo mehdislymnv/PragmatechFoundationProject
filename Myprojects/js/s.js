@@ -1,5 +1,13 @@
 
-const secim=Number(prompt("1 cem, 2 ferq ,3 hasil ,4 nisbet  secim : "));
+let arr=[20,12,10,5]
+
+sirala=arr.sort(function(x,y){
+    return x-y
+}
+
+);
+console.log(sirala);
+/*const secim=Number(prompt("1 cem, 2 ferq ,3 hasil ,4 nisbet  secim : "));
 a=Number(prompt("a : "));
 b=Number(prompt("b : "));
 switch(secim){
@@ -14,7 +22,7 @@ switch(secim){
         break
     case 4:
         console.log(alert("nisbet :" + Number(a/b)))
-}
+}*/
 /*
 let qeydiyat={
     ad:prompt("Adiniz ? ")
