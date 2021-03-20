@@ -24,9 +24,15 @@
 .post-calendar{
     width: 34.6%;
     padding:  0 0 0 50px;
-    background:blue;
+   
     border-left: 2px solid #f1f1f1 ;
     margin-left: 20px;
+    
+}
+.post-calendar .cl1{
+    border-top:2px solid #e3e2e7;
+    border-bottom:2px solid #e3e2e7;
+    padding: 50px 0;
 }
 .img1{
     height: auto;
@@ -70,6 +76,7 @@
 
 }
 .post-text h3{
+    cursor: pointer;
     font-weight: 700;
     color: #292929;
     font-size: 36px;
@@ -132,4 +139,88 @@
 .next-bt:hover{
     background: none !important;
     color: #ffba00 !important;
+}
+/*calendar*/
+.post-calendar caption {
+    color: #ffffff;
+    background-color: #FFBA00;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    padding: 10px;
+   }
+.post-calendar caption i{
+    transition: all ease 0.5s;
+    cursor: pointer;
+   position: relative;
+   right: 100px;
+   color: #FFC40A;
+   color: rgba(255,255,255,0.3);
+   font-size: 20px;
+}
+.post-calendar caption i:hover{
+    color: #ffffff;
+}
+.post-calendar th {
+    color: #272c4c;
+ 
+}
+.post-calendar th {
+    
+    padding: 12px 0;
+    font-weight: inherit;
+    position: relative;
+}
+.post-calendar tbody td {
+    position: relative;
+    text-align: center;
+    line-height: 44px;
+    height: 44px;
+}
+.post-calendar table {
+    margin-bottom: 0;
+    table-layout: fixed;
+    width: 100%;
+    position: relative;}
+
+    table{border-collapse: collapse;
+    border-spacing: 0;}
+.post-calendar tbody td:not(.pad):after {
+    content: '';
+    width: 38px;
+    height: 38px;
+    
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    display: block;
+    border-radius: 50%;
+    border: 1px solid #ececec;
+}
+/*form-post*/
+.form-post{
+    display: flex;
+    padding: 0 0 50px 0;
+    border-bottom: 2px solid #e3e2e7;
+}
+.form-post form input{
+    
+    padding: 10px 25px;
+    
+    border: 2px solid #E3E2E7;
+    border-right: none;
+}
+.form-post .in{
+    transition: all ease .5s;
+    font-weight: 600;
+    padding: 10px 20px;
+    background: #ffba00;
+    color: #ffffff;
+
+}
+.form-post .in:hover{
+    background: #4555b9;
+
 }
