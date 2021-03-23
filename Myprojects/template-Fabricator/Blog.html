@@ -19,8 +19,55 @@
 <body>
     <header id="header">
         <div class="header-info">
+            <div class="burger-menu" id="burger-menu">
+              
+                <a href="javascript:" class="kapat" onclick="kapat();"> <i class="fas fa-times"></i></a>
+               <div class="menu-boxed-br">
+                <div class="header-nav-buton  ">
+                    <ul>
+                        <li><a href="../template-Fabricator/index.html">
+                            HOME  
+                        </a>                        
+                        </li>
+                        <li>
+                            <a href="">
+                                PAGES
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                        <a href="">
+                            FEATURES<i class="fas fa-angle-down"></i>
+                            
+                        </a>
+                        </li>
+                        <li>
+                            <a href="../template-Fabricator/Blog.html">
+                                BLOG<i class="fas fa-angle-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a  href="../template-Fabricator/Projects.html" target="_blank"> 
+                                PROJECTS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../template-Fabricator/Contacts.html" target="_blank">
+                                CONTACTS</a>
+                        </li>
+                    </ul>
+                    
+
+                </div>
+               </div>
+                
+            </div>
+       
+            
             <div class="header-info-container">
-                    <i class="fas fa-bars icon-menu"></i>
+                    
+                    <i id="ac" class="fas fa-bars icon-menu" onclick="ac();"></i>
+                    
                     <div class="header-info-container-contact">
                         <span>
                             <i class="fas fa-map-marker-alt"></i>
@@ -79,7 +126,7 @@
                             </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="../template-Fabricator/Blog.html">
                                     BLOG<i class="fas fa-angle-down"></i>
                                 </a>
                             </li>
@@ -251,8 +298,8 @@
                 
             </div>
             <div class="post-navigation">
-                <div>1</div>
-                <div>2</div>
+                <div><a href="../template-Fabricator/Blog.html">1</a></div>
+                <div><a href="../template-Fabricator/Blog2.html">2</a></div>
                 <div class="next-bt">
                     <span>NEXT
                         <i class="fas fa-angle-right"></i>
@@ -391,4 +438,6 @@
     
         </header>
     </section>
+    <script src="../template-Fabricator/proje.js"></script>
+
 </body>

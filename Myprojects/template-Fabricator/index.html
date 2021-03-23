@@ -16,10 +16,58 @@
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">    <title>MXD</title>
 </head>
 <body>
+   
     <header id="header">
         <div class="header-info">
+            <div class="burger-menu" id="burger-menu">
+              
+                <a href="javascript:" class="kapat" onclick="kapat();"> <i class="fas fa-times"></i></a>
+               <div class="menu-boxed-br">
+                <div class="header-nav-buton  ">
+                    <ul>
+                        <li><a href="../template-Fabricator/index.html">
+                            HOME  
+                        </a>                        
+                        </li>
+                        <li>
+                            <a href="">
+                                PAGES
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                        <a href="">
+                            FEATURES<i class="fas fa-angle-down"></i>
+                            
+                        </a>
+                        </li>
+                        <li>
+                            <a href="../template-Fabricator/Blog.html">
+                                BLOG<i class="fas fa-angle-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a  href="../template-Fabricator/Projects.html" target="_blank"> 
+                                PROJECTS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../template-Fabricator/Contacts.html" target="_blank">
+                                CONTACTS</a>
+                        </li>
+                    </ul>
+                    
+
+                </div>
+               </div>
+                
+            </div>
+       
+            
             <div class="header-info-container">
-                    <i class="fas fa-bars icon-menu"></i>
+                    
+                    <i id="ac" class="fas fa-bars icon-menu" onclick="ac();"></i>
+                    
                     <div class="header-info-container-contact">
                         <span>
                             <i class="fas fa-map-marker-alt"></i>
@@ -52,9 +100,9 @@
        
 
     </header>
-    <head class="navbar-fixed">
+    <header class="navbar-fixed" id="navbar">
         <div class="fixed-container">
-            <din class="navbar-fixed-boxed">
+            <din class="navbar-fixed-boxed" >
                 <div class="  navbar-fixed-logo header-nav-logo ">
                     <img src="https://ld-wp.template-help.com/wordpress_prod-13362_v1/wp-content/themes/fabricator-1/assets/images/invert-logo.png" alt="Fabricator" class="site-link__img">
                 </div>
@@ -77,7 +125,7 @@
                         </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="../template-Fabricator/Blog.html">
                                 BLOG<i class="fas fa-angle-down"></i>
                             </a>
                         </li>
@@ -100,7 +148,7 @@
        
 
         </div>
-    </head>
+    </header>
 
     <section id="slider">
         <div class="slider-content">
@@ -128,7 +176,7 @@
                             </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="../template-Fabricator/Blog.html">
                                     BLOG<i class="fas fa-angle-down"></i>
                                 </a>
                             </li>
@@ -418,6 +466,9 @@
 
     </header>
     
-   
+    <script src="../template-Fabricator/proje.js"></script>
+
+        
+    
 </body>
 </html>
