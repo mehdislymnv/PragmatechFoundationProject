@@ -614,8 +614,10 @@ img {
 	background:#272C4C;
 	height: 50px;
 
-	width: 100%;}
+	width: 100%;
+}
 .navbar-fixed-boxed{
+	
 	width: 90%;
 	margin: 0 auto;
 	height: 50px;
@@ -631,21 +633,19 @@ img {
 }
 
 /**/
-#navbar{
+#navbar {
+	
+	overflow: hidden;
 	display: none;
+	
 }
-@media (min-width: 700px){
-	#navbar {
-		display: block;
-	    position: fixed!important;
-   		padding: 0;
-		top: -50px;
-		width: 100%;
-		z-index: 1;
-		transition: top 0.3s;
-	  }
-	  
-
+  
+.sticky {
+	z-index: 3;
+	
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display:block !important;
+		
 }
-
-/**/

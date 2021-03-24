@@ -40,6 +40,11 @@
     background: no-repeat;
     background-size: cover ;
 }
+.post-6{
+    
+    max-height: 371px;
+    background-size: cover;
+}
 
 .post-day .post-day1:hover{
     background:#ffba00;
@@ -54,6 +59,7 @@
     padding: 10px 19.5px;
     text-align: center;
     background: #f1f1f1;
+    display: inline-block;
 
 }
 .post-day div span{
@@ -88,12 +94,7 @@
     color: #4555b9;
 }
 /**/
-.post-img .post-6{
-    height: 371px;
-    
-    width: 660px;
-    background-size: cover;
-}
+
 /**/
 .c-Categories h5{
     padding: 26px 0;
@@ -222,5 +223,59 @@
 }
 .form-post .in:hover{
     background: #4555b9;
+
+}
+@media (max-width:1068px){
+    .container-blog{
+        display: block;
+        
+    }
+    .container-blog2{
+        width: 100%;
+    }
+    .post-boxeds{
+       
+        width: 100% !important;
+    }
+    .post-calendar div{
+        
+
+    }
+    .post-calendar{
+        width: 100%;
+        padding: 0 0 20px 0 ;
+        border-left: 0; 
+        margin-left: 0;
+    }
+
+}
+@media (max-width:640px){
+    .container-blog{
+       
+        padding: 50px 15px 0 15px;
+    }
+    .post-boxeds{
+       
+        width: 100% !important;
+    }
+    .post-boxeds{
+        display: block;
+        width: 100%;
+    }
+    .post-boxeds div{
+        display: block;
+    }
+    .post-day .post-day1 {
+        margin: 0 0 20px 0;
+    }
+    .post-text h3{
+        font-size: 27px;
+
+    }
+    .post-6{
+       
+   
+
+    }
 
 }
