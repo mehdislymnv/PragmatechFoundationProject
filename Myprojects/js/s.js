@@ -1,3 +1,4 @@
+/*
 
 let arr=[20,12,10,5]
 
@@ -7,6 +8,85 @@ sirala=arr.sort(function(x,y){
 
 );
 console.log(sirala);
+
+
+faktorial=1;
+let b;
+b=Number(prompt("daxil edin :"))
+	
+for (let i=1 ;i<=b ;i++){
+		faktorial *=i;
+		
+}
+console.log(alert(faktorial));
+faa=1;
+for( let i=1; i<10; i++){
+      faa*=i;
+
+
+}
+console.log(faa);
+
+
+*/
+/*
+
+let faktr=1;
+let n=0;
+while(n<10){
+    n++
+    console.log(n);
+
+    faktr*=n;
+
+
+
+}
+console.log(faktr);*/
+/**
+ const errr = ["mehdi","suleyman","bir iki" ,"sdafsgd"];
+
+let index=0
+for (let index=0 ; index < errr.length ; index++){
+    console.log(errr[index]);
+
+}
+
+while(index < errr.length){
+    console.log(errr[index]);
+    index++;
+}
+
+
+let i=10;
+while(i<10){
+
+    if(i==5){
+        i++;
+        continue;
+
+    }
+    
+    console.log(i);
+    i++;
+    
+
+}
+
+
+for(let i=0; i<10 ;  i++){
+    if(i==3){
+        
+        continue;
+    }
+    else{
+        console.log(i);
+    }
+
+}
+ */
+
+
 /*const secim=Number(prompt("1 cem, 2 ferq ,3 hasil ,4 nisbet  secim : "));
 a=Number(prompt("a : "));
 b=Number(prompt("b : "));
