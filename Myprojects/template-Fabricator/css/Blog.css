@@ -93,6 +93,30 @@
 .post-text h3:hover{
     color: #4555b9;
 }
+.post-text h4{
+    display: block;
+    padding: 20px 100px;
+    list-style: armenian;
+    background: #F6F6F6;
+    position: relative;
+    display: block;
+    padding-left: 25px;
+    text-align: left;
+    text-decoration: underline;
+    cursor: pointer;
+    margin: 30px auto;
+
+}
+.post-text h4 a:hover{
+    color: black !important;
+    text-decoration: none;
+
+}
+.post-text h4 i{
+   padding: 0 10px;
+}
+
+
 /**/
 
 /**/
@@ -278,4 +302,14 @@
 
     }
 
+}
+.post12-text{
+    
+    font-size: 24px;
+    font-weight: 700;
+    background: #F6F6F6 ;
+    color: #4555b9;
+    padding: 39px 50px 35px;
+    
+    
 }

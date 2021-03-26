@@ -1,4 +1,17 @@
+const users=[
+    {name:"mehdi"},
+    {name:"di"}, 
+    {name:"asahdi"}
+];
+
+const names = users.map(function(usr){
+    return usr.name;
+});
+console.log(names);
 /*
+
+
+
 
 let arr=[20,12,10,5]
 
