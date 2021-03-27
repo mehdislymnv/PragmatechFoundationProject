@@ -633,19 +633,3 @@ img {
 }
 
 /**/
-#navbar {
-	
-	overflow: hidden;
-	display: none;
-	
-}
-  
-.sticky {
-	z-index: 3;
-	
-	position: fixed;
-	top: 0;
-	width: 100%;
-	display:block !important;
-		
-}
