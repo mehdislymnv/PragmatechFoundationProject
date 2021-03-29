@@ -1,5 +1,19 @@
 
-        
+let menuover=document.querySelectorAll(".header-nav-buton ul  li a");
+
+for (let i=0; i<menuover.length; i++ ){
+  menuover[i].addEventListener('mouseover',function(){
+    console.log("mehdi");
+  
+  })
+  
+}
+
+console.log(menuover);
+
+
+
+
 function ac(){
     document.getElementById("burger-menu").style.width="300px"
 }
@@ -14,11 +28,21 @@ function ac(){
 function kapat(){
     document.getElementById("burger-menu").style.width="0"
 }
-/**///////////////////*/ 
+
+
+
+
+/**///////////////////*/
+
+
+
+///////////////////////
+
+
+
+
+
 window.onscroll = function() {myFunction()};
-
-
-
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
