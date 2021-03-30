@@ -258,5 +258,5 @@
 	width: 100%;
 	display: block;
 	transition: top 0.5s;
-	z-index: 2;
+	z-index: 10;
   }

@@ -1,9 +1,12 @@
 
 let menuover=document.querySelectorAll(".header-nav-buton ul  li a");
+let overmenu=document.querySelector(".overmenu");
 
 for (let i=0; i<menuover.length; i++ ){
   menuover[i].addEventListener('mouseover',function(){
-    console.log("mehdi");
+    overmenu=document.querySelector(".overmenu");
+
+    overmenu.className += ' overd'
   
   })
   
@@ -16,7 +19,7 @@ console.log(menuover);
 
 function ac(){
     document.getElementById("burger-menu").style.width="300px"
-}
+} 
 function kapat(){
     document.getElementById("burger-menu").style.width="0"
 }
