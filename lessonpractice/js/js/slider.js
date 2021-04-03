@@ -31,8 +31,6 @@ leftBtn.addEventListener('click',function(){
         
     
 })
-    
-
 rightBtn.addEventListener('click',function(){
     if(index < slides.length -1){
         index++
