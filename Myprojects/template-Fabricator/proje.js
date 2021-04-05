@@ -1,4 +1,5 @@
-
+/**
+ * 
 let menuover=document.querySelectorAll(".header-nav-buton ul  li a");
 let overmenu=document.querySelector(".overmenu");
 
@@ -13,6 +14,7 @@ for (let i=0; i<menuover.length; i++ ){
 }
 
 console.log(menuover);
+ */
 
 
 
@@ -25,12 +27,6 @@ function kapat(){
 }
 
 
-function ac(){
-    document.getElementById("burger-menu").style.width="300px"
-}
-function kapat(){
-    document.getElementById("burger-menu").style.width="0"
-}
 
 
 

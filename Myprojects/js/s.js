@@ -1,3 +1,19 @@
+let n='144';
+b=n.length-1;
+console.log(b);
+
+
+for (let i=0; i<n.length-1  ; i++){
+    a=0;
+   
+    if(a!=b){
+        console.log("mehdi");
+    
+}
+
+}
+
+/*
 const users=[
     {name:"mehdi"},
     {name:"di"}, 
