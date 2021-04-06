@@ -250,6 +250,14 @@
 
 	
 }
+
+
+
+
+
+
+
+
 /*///////*/
 #navbar {
 	background-color: #333;
@@ -259,4 +267,199 @@
 	display: block;
 	transition: top 0.5s;
 	z-index: 10;
+  }
+
+/**//**/
+ 
+  
+  /* style the container */
+  .container-lg {
+    position: relative;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px 0 30px 0;
+   
+    width: 350px;
+  } 
+  
+  /* style inputs and link buttons */
+  input,
+  .btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none; /* remove underline from anchors */
+  }
+  
+  input:hover,
+  .btn:hover {
+    opacity: 1;
+  }
+  
+  /* add appropriate colors to fb, twitter and google buttons */
+  .fb {
+    background-color: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background-color: #55ACEE;
+    color: white;
+  }
+  
+  .google {
+    background-color: #dd4b39;
+    color: white;
+  }
+  
+  /* style the submit button */
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Two-column layout */
+  .col-lg {
+    float: left;
+    width: 100%;
+    margin: auto;
+    padding: 0 50px;
+    margin-top: 6px;
+    
+  }
+  
+  /* Clear floats after the columns */
+  .roww:after {
+    content: "";
+    display: table;
+    clear: both;
+   
+  }
+  
+  /* vertical line */
+  .vl-lg {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid #ddd;
+    height: 175px;
+  }
+  
+  /* text inside the vertical line */
+  .vl-lg-innertext {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 8px 10px;
+  }
+  
+  /* hide some text on medium and large screens */
+  .hide-md-lg {
+    display: none;
+  }
+  
+  /* bottom container */
+  .bottom-container-lg {
+    text-align: center;
+    background-color: #666;
+    border-radius: 0px 0px 4px 4px;
+    
+  }
+  
+  /* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 650px) {
+    .modal-content{
+        width: 72% !important;
+    }
+      .container-lg {
+         
+         
+          width: 100%  ;
+        }
+      .bottom-container {
+          
+          width: 100% ;
+        }
+    .col-lg{
+      width: 100%;
+      margin-top: 0;
+      
+    }
+    /* hide the vertical line */
+    .vl-lg {
+      display: none;
+    }
+    /* show the hidden text on small screens */
+    .hide-md-lg {
+      display: block;
+      text-align: center;
+    }
+  }
+
+#login{
+   
+    
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 11; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    transition: ease-out 0.7 all !important;
+    
+
+    
+}
+
+.modal-content {
+    position: relative;
+   
+    margin: auto;
+    padding: 0;
+   
+    width: 26%;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    -webkit-animation-name: animatetop !important;
+    -webkit-animation-duration: 0.4s !important;
+    animation-name: animatetop !important;
+    
+    animation-duration: 0.4s !important;
+}
+
+
+.login{
+    display:  block !important;
+    
+  
+}
+.dslog{
+    display: flex;
+}
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
   }

@@ -51,3 +51,25 @@ function scrollFunction() {
     document.getElementById("navbar").style.top = "-50px";
   }
 }
+/* logo */
+
+
+let logintag=document.querySelector("#login");
+console.log(logintag);
+
+let loginbuton = document.querySelector(".header-info-container-icon span");
+
+
+loginbuton.addEventListener("click",loginac);
+
+function loginac(){
+  logintag.style.display = "block";
+  
+  
+  
+
+}
+function lgbaqla(){
+  logintag.style.display = "none";
+ 
+}
