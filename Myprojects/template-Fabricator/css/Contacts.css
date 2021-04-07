@@ -317,8 +317,8 @@ textarea{
 	border: #e3e2e7 1px solid;
 	padding: 10px;
 }
-form div{
-	padding: 0 50px 0 0;
+.form-div{
+	padding: 0 0 0 0;
 }
 .form-message{
 	

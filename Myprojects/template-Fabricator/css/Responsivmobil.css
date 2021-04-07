@@ -271,6 +271,7 @@
 
 /**//**/
  
+
   
   /* style the container */
   .container-lg {
@@ -285,6 +286,7 @@
   /* style inputs and link buttons */
   input,
   .btn {
+    
     width: 100%;
     padding: 12px;
     border: none;
@@ -296,6 +298,7 @@
     line-height: 20px;
     text-decoration: none; /* remove underline from anchors */
   }
+ 
   
   input:hover,
   .btn:hover {
@@ -320,13 +323,13 @@
   
   /* style the submit button */
   input[type=submit] {
-    background-color: #4CAF50;
+    background-color: #FFBA00;
     color: white;
     cursor: pointer;
   }
   
   input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #272C4C;
   }
   
   /* Two-column layout */
@@ -375,7 +378,7 @@
   /* bottom container */
   .bottom-container-lg {
     text-align: center;
-    background-color: #666;
+    background-color:#F2F2F2;
     border-radius: 0px 0px 4px 4px;
     
   }
