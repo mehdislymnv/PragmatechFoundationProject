@@ -284,7 +284,7 @@ img {
 	font-weight: 300;
 }
 .col-4{
-	height: 100px;
+	
 	
 	text-align: center;
 }
@@ -296,6 +296,68 @@ img {
 	font-size: 16px;
 
 }
+.col-4{
+	display: block !important;
+	padding: 0 0 50px 0;
+}
+.col4i-img {
+	vertical-align: middle;
+    display: inline-block;
+	padding: 0 0 10px 0 ;
+	
+}
+
+.col4i-img img:hover{
+	transform: scale(1.1);
+	transition: ease all 0.5s;
+}
+#project-post .VIEW{
+
+	text-align: center;
+	
+
+	
+}
+#project-post .VIEW a{
+	
+	display: inline-block;
+    padding: 17px 55px;
+    margin: 40px 0 90px 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    
+	color: #fff ;
+    background: #FFBA00;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+
+	
+}
+#project-post .VIEW a span{
+	position: relative;
+    z-index: 2;
+    font-weight: 600;
+
+}
+.VIEW a:hover:after {
+    height: 100%;
+	
+	
+}
+.VIEW a:after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #4555b9;
+    transition: all .35s;
+	
+}
+
+
 
    @media (max-width:1068px){
 	.row{
