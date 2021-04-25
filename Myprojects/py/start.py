@@ -109,7 +109,62 @@ list = ['Red', 'Blue', 'Green', 'White', 'Black']
 
 print(random.choice(list)) """
 
-N = int(input(" : "))
-arr= [] 
-arr.insert(0,N)
-print(arr)
+
+""" 
+mehsular = []
+mehsullar=[]
+class Mehsul():
+    def __init__(self,_ad,_qiymet,_miqdar):
+        self.ad=_ad
+        self.qiymet=_qiymet
+        self.miqdar=_miqdar
+        mehsullar.append(self) 
+    def melumatGoster(self):
+        print(f'{self.ad} | {self.qiymet} | {self.miqdar}')
+
+    # def elaveEt(self):
+    #      mehsullar.append(self) 
+
+def istehsalEt():
+    ad=input('Mehsulun adi :')
+    qiymet=int(input('Mehsulun qiymeti :'))
+    miqdar=int(input('Mehsulun miqdari :'))
+    mehsul=Mehsul(ad,qiymet,miqdar)
+
+for say in range(2):
+    istehsalEt()
+
+def melumatlariGoster():
+    for mehsul in mehsullar:
+        mehsul.melumatGoster()
+        
+
+emr=input('Mehsullari gormek isteyirsiz mi? Yes/No');
+
+if emr=='Yes':
+    melumatlariGoster() """
+
+""" 
+marksheet =[]
+scoresheet=[]
+for i in range(int(input())):
+    name=input()
+    score=float(input())
+    marksheet += [[name, score]]
+    scoresheet += [score]
+
+    x=sorted(set(scoresheet))
+
+    for  n, s in sorted(marksheet):
+        if s==x:
+            print(n)
+ """
+
+def print_full_name(first, last):
+   if __name__ == '__main__':
+    first_name = input()
+    last_name = input()
+    print_full_name(first_name, last_name)
+
+
+print_full_name("mirmehdi","Suleymanov")
