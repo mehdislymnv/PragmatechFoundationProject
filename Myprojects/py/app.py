@@ -1,43 +1,99 @@
 from typing import ClassVar
 from flask import Flask,render_template,request,redirect
 
-
 app=Flask(__name__)
-students=[]
-class Student():
-    def __init__(self,_name,_surname,_seher,_email):
-        self.ad=_name
-        self.soyad=_surname
-        self.seher=_seher
-        self.email=_email
+kitablar=[]
+id=1
+class kitab():
+    def __init__(self,id,ad,qiymet,yazar):
+        self.id=id
+        self.ad=ad
+        self.qiymet=qiymet
+        self.yazar=yazar
+       
 
 
-indexData='index page data'
-aboutData={
-    'title':'About Page',
-    'content':'Lorem ipsum dolor sit amet',
-}
-contactData='contact page data'
 @app.route('/',methods=['GET','POST'])
 def index():
     if request.method=='POST':
+        _id=request.form['id']
         _ad=request.form['ad']
-        _soyad=request.form['soyad']
-        _seher=request.form['seher']
-        _email=request.form['email']
-        user=Student(_ad,_soyad,_seher,_email)
-        students.append(user)
+        _qiymet=request.form['qiymet']
+        _yazar=request.form['yazar']
+       
+        user=kitab(_ad,_qiymet,_yazar,_id)
+        kitablar.append(user)
         return redirect('/about')
-    return render_template('index.html',stud=students)
+    return render_template('index.html',stud=kitablar)
     
 
 @app.route('/about')
 def about():
-   return render_template('about.html',stud=students)
+   return render_template('about.html',stud=kitablar)
 
-@app.route('/contact')
-def contact():
-    return contactData
+
 
 if __name__=='__main__':
     app.run(debug=True)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""kitablar=[]
+class kitab():
+    def __init__(self,ad,qiymet,yazar):
+        self.ad=ad
+        self.qiymet=qiymet
+        self.yazar=yazar
+        
+        
+       
+
+a=kitab("mehdi","sa","sadasd")
+b=kitab("mdi","sa","sadasd")
+c=kitab("mdi","sa","sadasd")
+kitablar.append(a)
+kitablar.append(b)
+kitablar.append(c)
+
+
+
+for i in kitablar:
+    print(i.ad,i.qiymet,i.yazar)
+
+class uzunluq():
+
+    def __init__(self,deyer):
+        self.deyer=deyer
+        print(len(self.deyer))
+
+p1=uzunluq("mehdi")
+"""
+
+
+"""
+"""
