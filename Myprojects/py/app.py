@@ -1,40 +1,41 @@
-from typing import ClassVar
-from flask import Flask,render_template,request,redirect
+from flask import Flask,render_template,redirect,request
+from flask_sqlalchemy import SQLAlchemy
 
 app=Flask(__name__)
-kitablar=[]
-id=1
-class kitab():
-    def __init__(self,id,ad,qiymet,yazar):
-        self.id=id
-        self.ad=ad
-        self.qiymet=qiymet
-        self.yazar=yazar
-       
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
+db=SQLAlchemy(app)
 
+class User(db.Model):
+    id=db.Column(db.Integer,primary_key=True)
+    f_name=db.Column(db.String(50))
+    l_name=db.Column(db.String(50))
+    username=db.Column(db.String(50))
+    email=db.Column(db.String(50))
+    Address=db.Column(db.String(50))
+    Address2=db.Column(db.String(50))
 
-@app.route('/',methods=['GET','POST'])
-def index():
+@app.route("/", methods=['GET','POST'])
+def add():
     if request.method=='POST':
-        _id=request.form['id']
-        _ad=request.form['ad']
-        _qiymet=request.form['qiymet']
-        _yazar=request.form['yazar']
-       
-        user=kitab(_ad,_qiymet,_yazar,_id)
-        kitablar.append(user)
-        return redirect('/about')
-    return render_template('index.html',stud=kitablar)
+        user=User(
+            f_name=request.form['f_name'],
+            l_name=request.form['l_name'],
+            username=request.form['username'],
+            email=request.form['email'],
+            Adress=request.form['Address'],
+            Address2=request.form['Address2']
+
+        )
+        db.session.add(user)
+        db.session.commit()
+        return redirect('/')
     
-
-@app.route('/about')
-def about():
-   return render_template('about.html',stud=kitablar)
-
-
+    return render_template('index.html')
+    
 
 if __name__=='__main__':
     app.run(debug=True)
+  
 
 
 
@@ -46,54 +47,3 @@ if __name__=='__main__':
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"""kitablar=[]
-class kitab():
-    def __init__(self,ad,qiymet,yazar):
-        self.ad=ad
-        self.qiymet=qiymet
-        self.yazar=yazar
-        
-        
-       
-
-a=kitab("mehdi","sa","sadasd")
-b=kitab("mdi","sa","sadasd")
-c=kitab("mdi","sa","sadasd")
-kitablar.append(a)
-kitablar.append(b)
-kitablar.append(c)
-
-
-
-for i in kitablar:
-    print(i.ad,i.qiymet,i.yazar)
-
-class uzunluq():
-
-    def __init__(self,deyer):
-        self.deyer=deyer
-        print(len(self.deyer))
-
-p1=uzunluq("mehdi")
-"""
-
-
-"""
-"""
