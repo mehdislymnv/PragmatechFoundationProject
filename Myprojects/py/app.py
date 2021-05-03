@@ -14,7 +14,14 @@ class User(db.Model):
     Address=db.Column(db.String(50))
     Address2=db.Column(db.String(50))
 
-@app.route("/", methods=['GET','POST'])
+
+@app.route('/')
+def index():
+    users=User.query.all()
+    # select * from User
+    return render_template('index.html',users=users)
+
+@app.route("/add", methods=['GET','POST'])
 def add():
     if request.method=='POST':
         user=User(
@@ -22,7 +29,7 @@ def add():
             l_name=request.form['l_name'],
             username=request.form['username'],
             email=request.form['email'],
-            Adress=request.form['Address'],
+            Address=request.form['Address'],
             Address2=request.form['Address2']
 
         )
@@ -30,12 +37,51 @@ def add():
         db.session.commit()
         return redirect('/')
     
-    return render_template('index.html')
+    return render_template('add.html')
     
 
 if __name__=='__main__':
     app.run(debug=True)
   
+""" 
+
+@app.route('/')
+def index():
+    users=User.query.all()
+    # select * from User
+    return render_template('index.html',users=users)
+
+@app.route('/add',methods=['GET','POST'])
+def add():
+    if request.method=='POST':
+        user=User(
+            f_name=request.form['f_name'],
+            l_name=request.form['l_name']
+        )
+        db.session.add(user)
+        db.session.commit()
+        return redirect('/')
+    return render_template('add.html')
+
+@app.route('/delete/<id>')
+def delete(id):
+    user=User.query.get(id)
+    db.session.delete(user)
+    db.session.commit()
+    return redirect('/')
+
+@app.route('/update/<id>',methods=['GET','POST'])
+def update(id):
+    user=User.query.get(id)
+    if request.method=='POST':
+        user.f_name=request.form['f_name']
+        user.l_name=request.form['l_name']
+        db.session.commit()
+        return redirect('/')
+    
+    return render_template('update.html',user=user)
+if __name__=='__main__':
+    app.run(debug=True)
 
 
 
@@ -45,5 +91,4 @@ if __name__=='__main__':
 
 
 
-
-
+ """
