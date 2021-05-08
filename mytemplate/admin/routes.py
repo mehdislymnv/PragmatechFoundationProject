@@ -1,12 +1,12 @@
 from app import app
 from app import db
-from app.models import Blog
+from app.models import Blog,Leader
 from flask import Flask,redirect,url_for,render_template,request
 import os
 
 
 
-@app.route("/mehdi")
+@app.route("/admin/")
 def admin_index():
     return render_template('admin/index.html')
     
@@ -44,14 +44,39 @@ def delete(id):
 
 @app.route('/update/<id>',methods=['GET','POST'])
 def update(id):
-    blogs=Blog.query.get(id)
+    bl=Blog.query.get(id)
     if request.method=='POST':
-        blogs.b_title=request.form['b_title']
-        blogs.b_header=request.form['b_header']
-        blogs.b_url=request.form['b_url']
-        blogs.b_gun=request.form['b_gun']
+        bl.b_title=request.form['b_title']
+        bl.b_header=request.form['b_header']
+        bl.b_url=request.form['b_url']
+        bl.b_gun=request.form['b_gun']
         db.session.commit()
-        return redirect('/')
+        return redirect('/admin')
     
-    return render_template('admin/update.html',blogs=blogs)
+    return render_template('admin/update.html',bl=bl)
 
+# leader router
+@app.route("/admin/leader",methods=['GET','POST'])
+def admin_leader():
+
+    leaders=Leader.query.all()
+    if request.method=='POST':
+        file=request.files['l_foto']
+        filename=file.filename
+        file.save(os.path.join(app.config['UPLOAD_FOLDER'],filename))
+
+        leader=Leader(
+            l_name=request.form['l_name'],
+            l_header=request.form['l_header'],
+            l_position=request.form['l_position'],
+            f_url=request.form['f_url'],
+            t_url=request.form['t_url'],
+            g_url=request.form['g_url'],
+            l_foto=filename
+
+
+        )
+        db.session.add(leader)
+        db.session.commit()
+        return redirect('/admin/leader')
+    return render_template('/admin/l.html',leaders=leaders)

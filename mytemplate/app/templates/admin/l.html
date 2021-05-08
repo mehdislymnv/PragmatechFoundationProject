@@ -1,0 +1,43 @@
+{% extends 'admin/base.html' %} {% block content %}
+<h3 class="my-2">Leader Page</h3>
+
+<h4 class="my-2">Add </h4>
+
+<form action="/admin/leader" method='POST' enctype="multipart/form-data">
+    <input type="text" class="form-control my-2" name='l_name' placeholder="Name">
+    <input type="text" class="form-control my-2" name='l_position' placeholder="Position">
+    <input type="text" class="form-control my-2" name='l_header' placeholder="Header">
+    <input type="text" class="form-control my-2" name='f_url' placeholder="facebook">
+    <input type="text" class="form-control my-2" name='t_url' placeholder="twitter">
+    <input type="text" class="form-control my-2" name='g_url' placeholder="G+">
+    <input type="file" class="form-control my-2" name='l_foto'>
+    <input type="submit" class="btn btn-primary px-2 my-2" value='Add New Slide'>
+</form>
+
+<h4 class="my-2">All </h4>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th> Name</th>
+            <th>Position</th>
+            <th>Header</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+         {% for le in leaders %}
+        <tr>
+            <td scope="row">{{le.l_name}}</td>
+            <td>{{le.l_position}}</td>
+            <td>{{le.l_header}}</td>
+            <td>
+                <a href="/delete/{{le.id}}">Delete</a>
+                <a href="/update/{{le.id}}">Update</a>
+            </td>
+        </tr>
+        {% endfor %} 
+
+    </tbody>
+</table>
+{% endblock %}
