@@ -19,3 +19,8 @@ def site_blog():
 def site_leader():
     leaders=Leader.query.all()
     return render_template('main/leader.html',leaders=leaders)
+
+@app.route("/")
+def site_base():
+    footers=footer.query.all()
+    return render_template('main/base.html',footers=footers)

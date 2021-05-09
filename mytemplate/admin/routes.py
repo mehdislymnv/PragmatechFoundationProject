@@ -1,6 +1,6 @@
 from app import app
 from app import db
-from app.models import Blog,Leader
+from app.models import Blog,Leader,footer
 from flask import Flask,redirect,url_for,render_template,request
 import os
 
@@ -36,14 +36,14 @@ def admin_blog():
     return render_template('/admin/a_blog.html',blogs=blogs)
 
 @app.route('/delete/<id>')
-def delete(id):
+def delete_blog(id):
     blogs=Blog.query.get(id)
     db.session.delete(blogs)
     db.session.commit()
     return redirect('/admin/blog')
 
 @app.route('/update/<id>',methods=['GET','POST'])
-def update(id):
+def update_blog(id):
     bl=Blog.query.get(id)
     if request.method=='POST':
         bl.b_title=request.form['b_title']
@@ -65,7 +65,7 @@ def admin_leader():
         filename=file.filename
         file.save(os.path.join(app.config['UPLOAD_FOLDER'],filename))
 
-        leader=Leader(
+        lead=Leader(
             l_name=request.form['l_name'],
             l_header=request.form['l_header'],
             l_position=request.form['l_position'],
@@ -76,7 +76,34 @@ def admin_leader():
 
 
         )
-        db.session.add(leader)
+        db.session.add(lead)
         db.session.commit()
         return redirect('/admin/leader')
     return render_template('/admin/l.html',leaders=leaders)
+
+# leader CRUD
+
+
+
+
+
+#foorer router
+@app.route("/admin/footer",methods=['GET','POST'])
+def foote():
+    
+    footers=footer.query.all()
+    if request.method=='POST':
+        fto=footer(
+            location=request.form['location'],
+            email=request.form['email'],
+            number=request.form['number'],
+            facebook=request.form['facebook'],
+            twitter=request.form['twitter'],
+            youtube=request.form['youtube'],
+            insdagram=request.form['insdagram']
+        )
+        db.session(fto)
+        db.session.commit()
+        return redirect('/admin/footer')
+    return render_template('/admin/footer.html',footers=footers) 
+        

@@ -20,3 +20,13 @@ class Leader(db.Model):
     g_url=db.Column(db.String(100))
 
  
+
+class footer(db.Model):
+    id=db.Column(db.Integer,primary_key=True)
+    location=db.Column(db.String(50))
+    email=db.Column(db.String(50))
+    number=db.Column(db.String(50))
+    facebook=db.Column(db.String(100))
+    twitter=db.Column(db.String(100))
+    youtube=db.Column(db.String(100))
+    insdagram=db.Column(db.String(100))

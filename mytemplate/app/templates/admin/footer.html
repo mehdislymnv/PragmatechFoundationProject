@@ -1,0 +1,44 @@
+{% extends 'admin/base.html' %} {% block content %}
+<h3 class="my-2">Footer</h3>
+
+<h4 class="my-2">Add New </h4>
+
+<form action="/admin/footer" method='POST' enctype="multipart/form-data">
+    <input type="text" class="form-control my-2" name='location' placeholder="location">
+    <input type="text" class="form-control my-2" name='email' placeholder="email">
+    <input type="text" class="form-control my-2" name='number' placeholder="number">
+    <input type="text" class="form-control my-2" name='facebook' placeholder="facebook">
+    <input type="text" class="form-control my-2" name='twitter' placeholder="twitter">
+    <input type="text" class="form-control my-2" name='youtube' placeholder="youtube">
+    <input type="text" class="form-control my-2" name='insdagram' placeholder="insdagram">
+  
+    <input type="submit" class="btn btn-primary px-2 my-2" value='Add New Slide'>
+</form>
+
+<h4 class="my-2">All Footer</h4>
+
+ <table class="table">
+    <thead>
+        <tr>
+            <th>f Title</th>
+            <th>f Header</th>
+            <th>f URL</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for f in footers %}
+        <tr>
+            <td scope="row">{{f.email}}</td>
+            <td>{{f.number}}</td>
+            <td>{{f.facebook}}</td>
+            <td>
+                <a href="#">Delete</a>
+                <a href="#">Update</a>
+            </td>
+        </tr>
+        {% endfor %}
+
+    </tbody>
+</table> 
+{% endblock %}
