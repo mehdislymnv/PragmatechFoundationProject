@@ -23,10 +23,10 @@ class Leader(db.Model):
 
 class footer(db.Model):
     id=db.Column(db.Integer,primary_key=True)
-    location=db.Column(db.String(50))
-    email=db.Column(db.String(50))
-    number=db.Column(db.String(50))
-    facebook=db.Column(db.String(100))
-    twitter=db.Column(db.String(100))
-    youtube=db.Column(db.String(100))
-    insdagram=db.Column(db.String(100))
+    f_location=db.Column(db.String(50))
+    f_email=db.Column(db.String(50))
+    f_number=db.Column(db.String(50))
+    f_facebook=db.Column(db.String(100))
+    f_twitter=db.Column(db.String(100))
+    f_youtube=db.Column(db.String(100))
+    f_insdagram=db.Column(db.String(100))

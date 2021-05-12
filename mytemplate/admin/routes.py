@@ -89,20 +89,20 @@ def admin_leader():
 
 #foorer router
 @app.route("/admin/footer",methods=['GET','POST'])
-def foote():
+def footer_admin():
     
     footers=footer.query.all()
     if request.method=='POST':
-        fto=footer(
-            location=request.form['location'],
-            email=request.form['email'],
-            number=request.form['number'],
-            facebook=request.form['facebook'],
-            twitter=request.form['twitter'],
-            youtube=request.form['youtube'],
-            insdagram=request.form['insdagram']
+        ft=footer(
+            f_location=request.form['f_location'],
+            f_email=request.form['f_email'],
+            f_number=request.form['f_number'],
+            f_facebook=request.form['f_facebook'],
+            f_twitter=request.form['f_twitter'],
+            f_youtube=request.form['f_youtube'],
+            f_insdagram=request.form['f_insdagram']
         )
-        db.session(fto)
+        db.session.add(ft)
         db.session.commit()
         return redirect('/admin/footer')
     return render_template('/admin/footer.html',footers=footers) 

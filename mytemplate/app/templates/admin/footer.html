@@ -4,13 +4,13 @@
 <h4 class="my-2">Add New </h4>
 
 <form action="/admin/footer" method='POST' enctype="multipart/form-data">
-    <input type="text" class="form-control my-2" name='location' placeholder="location">
-    <input type="text" class="form-control my-2" name='email' placeholder="email">
-    <input type="text" class="form-control my-2" name='number' placeholder="number">
-    <input type="text" class="form-control my-2" name='facebook' placeholder="facebook">
-    <input type="text" class="form-control my-2" name='twitter' placeholder="twitter">
-    <input type="text" class="form-control my-2" name='youtube' placeholder="youtube">
-    <input type="text" class="form-control my-2" name='insdagram' placeholder="insdagram">
+    <input type="text" class="form-control my-2" name='f_location' placeholder="location">
+    <input type="text" class="form-control my-2" name='f_email' placeholder="email">
+    <input type="text" class="form-control my-2" name='f_number' placeholder="number">
+    <input type="text" class="form-control my-2" name='f_facebook' placeholder="facebook">
+    <input type="text" class="form-control my-2" name='f_twitter' placeholder="twitter">
+    <input type="text" class="form-control my-2" name='f_youtube' placeholder="youtube">
+    <input type="text" class="form-control my-2" name='f_insdagram' placeholder="insdagram">
   
     <input type="submit" class="btn btn-primary px-2 my-2" value='Add New Slide'>
 </form>
@@ -29,9 +29,20 @@
     <tbody>
         {% for f in footers %}
         <tr>
-            <td scope="row">{{f.email}}</td>
-            <td>{{f.number}}</td>
-            <td>{{f.facebook}}</td>
+            <td scope="row">{{f.f_email}}</td>
+            <td>{{f.f_number}}</td>
+            <td>{{f.f_facebook}}</td>
+            <td>
+                <a href="#">Delete</a>
+                <a href="#">Update</a>
+            </td>
+        </tr>
+        <tr>
+            <td scope="row">{{f.f_facebook}}</td>
+            <td>{{f.f_twitter}}</td>
+            <td>{{f.f_youtube}}</td>
+            <td>{{f.f_insdagram}}</td>
+            
             <td>
                 <a href="#">Delete</a>
                 <a href="#">Update</a>
@@ -40,5 +51,6 @@
         {% endfor %}
 
     </tbody>
+    
 </table> 
 {% endblock %}
