@@ -1,12 +1,14 @@
 from app import app
-from app.models import Blog,Leader,footer
+from app.models import Blog,Leader, Projects,footer
 from flask import Flask,redirect,url_for,render_template,request
 
 
 @app.route("/")
 def site_index():
+   
+    project=Projects.query.all()
     footers=footer.query.all()
-    return render_template('main/index.html',footers=footers)
+    return render_template('main/index.html',footers=footers, project=project)
    
 
 
@@ -23,3 +25,19 @@ def site_leader():
     footers=footer.query.all()
     return render_template('main/leader.html',leaders=leaders , footers=footers)
 
+@app.route("/contacts")
+def site_contact():
+    footers=footer.query.all()
+    return render_template('main/Contacts.html',footers=footers)
+
+
+@app.route("/about")
+def site_about():
+    footers=footer.query.all()
+    return render_template('main/about.html',footers=footers)
+
+@app.route("/projects")
+def site_projects():
+    projects=Projects.query.all()
+    footers=footer.query.all()
+    return render_template('main/Projects.html',projects=projects,footers=footers)

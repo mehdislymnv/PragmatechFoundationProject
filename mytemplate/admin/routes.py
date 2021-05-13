@@ -1,6 +1,6 @@
 from app import app
 from app import db
-from app.models import Blog,Leader,footer
+from app.models import Blog,Leader,footer,Projects
 from flask import Flask,redirect,url_for,render_template,request
 import os
 
@@ -89,7 +89,7 @@ def admin_leader():
 
 #foorer router
 @app.route("/admin/footer",methods=['GET','POST'])
-def footer_admin():
+def admin_footer():
     
     footers=footer.query.all()
     if request.method=='POST':
@@ -107,3 +107,23 @@ def footer_admin():
         return redirect('/admin/footer')
     return render_template('/admin/footer.html',footers=footers) 
         
+#Projects router
+
+@app.route("/admin/projects",methods=['GET','POST'])
+def adim_Projects():
+    if request.method =='POST':
+        file=request.files['p_foto']
+        filename=file.filename
+        file.save(os.path.join(app.config['UPLOAD_FOLDER'],filename))
+
+        proje=Projects.query.all()
+        project=Projects(
+            p_title=request.form['p_title'],
+            p_header=request.form['p_header'],
+            p_url=request.form['p_title'],
+            p_foto=request.form['p_foto']
+
+       )
+        db.session.add(proje)
+        db.session.commit()
+    return render_template('/admin/a_Projects.html',project=project)

@@ -30,3 +30,11 @@ class footer(db.Model):
     f_twitter=db.Column(db.String(100))
     f_youtube=db.Column(db.String(100))
     f_insdagram=db.Column(db.String(100))
+
+
+class Projects(db.Model):
+    id=db.Column(db.Integer,primary_key=True)
+    p_title=db.Column(db.String(50))
+    p_header=db.Column(db.String(50))
+    p_url=db.Column(db.String(100))
+    p_foto=db.Column(db.String(100))

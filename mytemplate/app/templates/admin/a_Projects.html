@@ -1,0 +1,40 @@
+{% extends 'admin/base.html' %} {% block content %}
+<h3 class="my-2">Projects Page</h3>
+
+<h4 class="my-2">Add </h4>
+
+<form action="/admin/projects" method='POST' enctype="multipart/form-data">
+    <input type="text" class="form-control my-2" name='p_title' placeholder="Title">
+    <input type="text" class="form-control my-2" name='p_header' placeholder="Header">
+    <input type="text" class="form-control my-2" name='p_url' placeholder="Url">
+    <input type="file" class="form-control my-2" name='p_foto'>
+    <input type="submit" class="btn btn-primary px-2 my-2" value='Add New Project'>
+</form>
+
+<h4 class="my-2">All </h4>
+
+<!-- <table class="table">
+    <thead>
+        <tr>
+            <th> Name</th>
+            <th>Position</th>
+            <th>Header</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+         {% for le in leaders %}
+        <tr>
+            <td scope="row">{{le.l_name}}</td>
+            <td>{{le.l_position}}</td>
+            <td>{{le.l_header}}</td>
+            <td>
+                <a href="/delete/{{le.id}}">Delete</a>
+                <a href="/update/{{le.id}}">Update</a>
+            </td>
+        </tr>
+        {% endfor %} 
+
+    </tbody>
+</table> -->
+{% endblock %}
