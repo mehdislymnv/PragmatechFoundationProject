@@ -1,0 +1,18 @@
+{% extends 'admin/layout.html' %} {% block content %}
+<h3 class="my-3">Update User</h3>
+
+
+
+<form action="/update_f/{{fto.id}}" method='POST'>
+    <input type="text" class="form-control my-2" name='f_location' placeholder="Your Name" value={{fto.f_location}}>
+    <input type="text" class="form-control my-2" name='f_email' placeholder="Your Surname" value={{fto.f_email}}>
+    <input type="text" class="form-control my-2" name='f_number' placeholder="Your Name" value={{fto.f_number}}>
+    <input type="text" class="form-control my-2" name='f_facebook' placeholder="Your Surname" value={{fto.f_facebook}}>
+    <input type="text" class="form-control my-2" name='f_twitter' placeholder="Your Name" value={{fto.f_twitter}}>
+    <input type="text" class="form-control my-2" name='f_youtube' placeholder="Your Surname" value={{fto.f_youtube}}>
+    <input type="text" class="form-control my-2" name='f_insdagram' placeholder="Your Surname" value={{fto.f_insdagram}}>
+    <input type="submit" class="btn btn-primary my-2" value='Update'>
+</form>
+
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'admin/layout.html' %} {% block content %}
+<h3 class="my-3">Update User</h3>
+
+
+
+<form action="/update_l/{{lea.id}}" method='POST'>
+    <input type="text" class="form-control my-2" name='l_name' placeholder="Your Name" value={{lea.l_name}}>
+    <input type="text" class="form-control my-2" name='l_header' placeholder="Your Surname" value={{lea.l_header}}>
+    <input type="text" class="form-control my-2" name='l_position' placeholder="Your Name" value={{lea.l_position}}>
+    <input type="text" class="form-control my-2" name='f_url' placeholder="Your Surname" value={{lea.f_url}}>
+    <input type="text" class="form-control my-2" name='t_url' placeholder="Your Name" value={{lea.t_url}}>
+    <input type="text" class="form-control my-2" name='g_url' placeholder="Your Surname" value={{lea.g_url}}>
+    <input type="submit" class="btn btn-primary my-2" value='Update'>
+</form>
+
+
+{% endblock %}

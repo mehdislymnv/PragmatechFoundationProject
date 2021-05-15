@@ -28,24 +28,15 @@
     </thead>
     <tbody>
         {% for f in footers %}
+       
         <tr>
             <td scope="row">{{f.f_email}}</td>
             <td>{{f.f_number}}</td>
             <td>{{f.f_facebook}}</td>
-            <td>
-                <a href="#">Delete</a>
-                <a href="#">Update</a>
-            </td>
-        </tr>
-        <tr>
-            <td scope="row">{{f.f_facebook}}</td>
-            <td>{{f.f_twitter}}</td>
-            <td>{{f.f_youtube}}</td>
-            <td>{{f.f_insdagram}}</td>
             
             <td>
-                <a href="#">Delete</a>
-                <a href="#">Update</a>
+                <a href="/delete_f/{{f.id}}">Delete</a>
+                <a href="/update_f/{{f.id}}">Update</a>
             </td>
         </tr>
         {% endfor %}

@@ -84,6 +84,29 @@ def admin_leader():
 # leader CRUD
 
 
+@app.route('/delete_l/<id>')
+def delete_leader(id):
+    
+    leaders=Leader.query.get(id)
+    db.session.delete(leaders)
+    db.session.commit()
+    return redirect('/admin/leader')
+
+@app.route('/update_l/<id>',methods=['GET','POST'])
+def update_leader(id):
+    lea=Leader.query.get(id)
+    if request.method=='POST':
+        lea.l_name=request.form['l_name']
+        lea.l_header=request.form['l_header']
+        lea.l_position=request.form['l_position']
+        lea.f_url=request.form['f_url']
+        lea.t_url=request.form['t_url']
+        lea.g_url=request.form['g_url']
+        db.session.commit()
+        return redirect('/admin')
+    
+    return render_template('admin/update_l.html',lea=lea)
+
 
 
 
@@ -106,24 +129,58 @@ def admin_footer():
         db.session.commit()
         return redirect('/admin/footer')
     return render_template('/admin/footer.html',footers=footers) 
-        
+
+
+#footer CURD
+@app.route('/delete_f/<id>')
+def delete_footer(id):
+    
+    footers=footer.query.get(id)
+    db.session.delete(footers)
+    db.session.commit()
+    return redirect('/admin/footer')
+
+@app.route('/update_f/<id>',methods=['GET','POST'])
+def update_footer(id):
+    fto=footer.query.get(id)
+    if request.method=='POST':
+        fto.f_location=request.form['f_location']
+        fto.f_email=request.form['f_email']
+        fto.f_number=request.form['f_number']
+        fto.f_facebook=request.form['f_facebook']
+        fto.f_twitter=request.form['f_twitter']
+        fto.f_youtube=request.form['f_youtube']
+        fto.f_insdagram=request.form['f_insdagram']
+        db.session.commit()
+        return redirect('/admin')
+    
+    return render_template('admin/update_f.html',fto=fto)
+
 #Projects router
 
 @app.route("/admin/projects",methods=['GET','POST'])
 def adim_Projects():
+    project=Projects.query.all()
     if request.method =='POST':
         file=request.files['p_foto']
         filename=file.filename
         file.save(os.path.join(app.config['UPLOAD_FOLDER'],filename))
-
-        proje=Projects.query.all()
-        project=Projects(
+        
+        proje=Projects(
             p_title=request.form['p_title'],
             p_header=request.form['p_header'],
-            p_url=request.form['p_title'],
-            p_foto=request.form['p_foto']
-
-       )
+            p_url=request.form['p_url'],
+            p_foto=filename
+        )
         db.session.add(proje)
         db.session.commit()
+        return redirect('/admin/projects')
     return render_template('/admin/a_Projects.html',project=project)
+#Projects CURD
+@app.route('/delete_p/<id>')
+def delete_projects(id):
+    
+    project=Projects.query.get(id)
+    db.session.delete(project)
+    db.session.commit()
+    return redirect('/admin/projects')

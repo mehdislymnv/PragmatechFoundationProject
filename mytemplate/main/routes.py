@@ -38,6 +38,6 @@ def site_about():
 
 @app.route("/projects")
 def site_projects():
-    projects=Projects.query.all()
+    project=Projects.query.all()
     footers=footer.query.all()
-    return render_template('main/Projects.html',projects=projects,footers=footers)
+    return render_template('main/Projects.html',project=project,footers=footers)
