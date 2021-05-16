@@ -1,7 +1,7 @@
 from app import app
 from app import db
-from app.models import Blog,Leader,footer,Projects
-from flask import Flask,redirect,url_for,render_template,request
+from app.models import Blog,Leader,footer,Projects,about
+from flask import Flask,redirect,url_for,render_template,request,session
 import os
 
 
@@ -131,7 +131,7 @@ def admin_footer():
     return render_template('/admin/footer.html',footers=footers) 
 
 
-#footer CURD
+#footer CRUD
 @app.route('/delete_f/<id>')
 def delete_footer(id):
     
@@ -159,7 +159,7 @@ def update_footer(id):
 #Projects router
 
 @app.route("/admin/projects",methods=['GET','POST'])
-def adim_Projects():
+def admin_Projects():
     project=Projects.query.all()
     if request.method =='POST':
         file=request.files['p_foto']
@@ -176,7 +176,7 @@ def adim_Projects():
         db.session.commit()
         return redirect('/admin/projects')
     return render_template('/admin/a_Projects.html',project=project)
-#Projects CURD
+#Projects CRUD
 @app.route('/delete_p/<id>')
 def delete_projects(id):
     
@@ -184,3 +184,35 @@ def delete_projects(id):
     db.session.delete(project)
     db.session.commit()
     return redirect('/admin/projects')
+
+
+@app.route('/update_p/<id>',methods=['GET','POST'])
+def update_project(id):
+    Pro=Projects.query.get(id)
+    if request.method=='POST':
+        Pro.p_title=request.form['p_title']
+        Pro.p_header=request.form['p_header']
+        Pro.p_url=request.form['p_url']
+        db.session.commit()
+        return redirect('/admin')
+    
+    return render_template('/admin/update_p.html',Pro=Pro)
+
+
+@app.route("/admin/abou",methods=['GET','POST'])
+def admin_abou():
+    abouts=about.query.all()
+    if request.method =='POST':
+        file=request.files['a_foto']
+        filename=file.filename
+        file.save(os.path.join(app.config['UPLOAD_FOLDER'],filename))
+        ab=about(
+            a_title=request.form['a_title'],
+            a_header=request.form['a_header'],
+            a_url=request.form['a_url'],
+            a_foto=filename
+        )
+        db.session.add(ab)
+        db.session.commit()
+        return redirect('/admin')
+    return render_template('/admin/a_about.html',abouts=abouts )

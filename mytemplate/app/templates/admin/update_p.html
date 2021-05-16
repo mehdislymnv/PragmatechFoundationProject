@@ -1,0 +1,14 @@
+{% extends 'admin/layout.html' %} {% block content %}
+<h3 class="my-3">Update User</h3>
+
+
+
+<form action="/update_p/{{Pro.id}}" method='POST'>
+    <input type="text" class="form-control my-2" name='p_title' placeholder="Your Name" value={{Pro.p_title}}>
+    <input type="text" class="form-control my-2" name='p_header' placeholder="Your Surname" value={{Pro.p_header}}>
+    <input type="text" class="form-control my-2" name='p_url' placeholder="Your Name" value={{Pro.p_url}}>
+    <input type="submit" class="btn btn-primary my-2" value='Update'>
+</form>
+
+
+{% endblock %}

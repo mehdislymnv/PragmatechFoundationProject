@@ -19,7 +19,6 @@ class Leader(db.Model):
     t_url=db.Column(db.String(100))
     g_url=db.Column(db.String(100))
 
- 
 
 class footer(db.Model):
     id=db.Column(db.Integer,primary_key=True)
@@ -38,3 +37,12 @@ class Projects(db.Model):
     p_header=db.Column(db.String(50))
     p_url=db.Column(db.String(100))
     p_foto=db.Column(db.String(100))
+
+
+class about(db.Model):
+    id=db.Column(db.Integer,primary_key=True)
+    a_title=db.Column(db.String(50))
+    a_header=db.Column(db.String(50))
+    a_url=db.Column(db.String(100))
+    a_foto=db.Column(db.String(100))
+

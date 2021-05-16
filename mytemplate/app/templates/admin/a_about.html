@@ -1,0 +1,40 @@
+{% extends 'admin/base.html' %} {% block content %}
+<h3 class="my-2">Blog Page</h3>
+
+<h4 class="my-2">Add New Blog</h4>
+
+<form action="/admin/abou" method='POST' enctype="multipart/form-data">
+    <input type="text" class="form-control my-2" name='a_title' placeholder="Blog Title">
+    <input type="text" class="form-control my-2" name='a_header' placeholder="Blog Header">
+    <input type="text" class="form-control my-2" name='a_url' placeholder="Blog URL">
+    <input type="file" class="form-control my-2" name='a_foto'>
+    <input type="submit" class="btn btn-primary px-2 my-2" value='Add New Slide'>
+</form>
+
+<h4 class="my-2">All Blog</h4>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Blog Title</th>
+            <th>Blog Header</th>
+            <th>Blog URL</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for abou in abouts %}
+        <tr>
+            <td scope="row">{{abou.a_title}}</td>
+            <td>{{abou.a_header}}</td>
+            <td>{{abou.a_url}}</td>
+            <!-- <td>
+                <a href="/delete/{{abou.id}}">Delete</a>
+                <a href="/update/{{abou.id}}">Update</a>
+            </td> -->
+        </tr>
+        {% endfor %}
+
+    </tbody>
+</table> 
+{% endblock %}
