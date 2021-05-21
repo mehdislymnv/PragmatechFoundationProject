@@ -1,8 +1,11 @@
 from app import app
 from app import db
-from app.models import Blog,Leader,footer,Projects,about
-from flask import Flask,redirect,url_for,render_template,request,session
+from app.models import Blog,Leader,footer,Projects,about,User
+from flask import Flask,redirect,url_for,render_template,request,session,make_response
 import os
+
+from enum import unique
+
 
 
 
@@ -216,3 +219,23 @@ def admin_abou():
         db.session.commit()
         return redirect('/admin')
     return render_template('/admin/a_about.html',abouts=abouts )
+
+
+@app.route("/admin/login",methods=['GET','POST'])
+def admin_login():
+    users=User.query.all()
+    if request.method=='POST':
+        for user in users:
+            if user.username==request.form['username']:
+                if user.password==request.form['password']:
+                    resp = make_response(render_template('profile.html',user=user))
+                    resp.set_cookie('loginStatus', str(user.id))
+                    return resp
+                   
+                else:
+                    return redirect('/login')
+
+    
+    return render_template('/admin/login.html')
+    
+

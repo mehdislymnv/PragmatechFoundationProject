@@ -12,34 +12,22 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
-
+    <nav class="navbar navbar-expand-sm">
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                             <li class="nav-item active">
-                                <a class="nav-link" href="/admin/">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/admin/blog">Blog</a>
+                                <a class="nav-link" href="/login">Login</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/admin/leader">Leader</a>
+                                <a class="nav-link" href="/register">Register</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/admin/footer">Footer</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/admin/projects">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/admin/abou">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/admin/login">About</a>
-                            </li>
+
 
                         </ul>
                     </div>
@@ -48,11 +36,12 @@
 
         </div>
     </nav>
-
     <div class="container">
         <div class="row">
             <div class="col-12">
-                {% block content %} {% endblock %}
+
+                {% block content %} {% endblock content %}
+
             </div>
         </div>
     </div>
