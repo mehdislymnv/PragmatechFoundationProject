@@ -1,6 +1,6 @@
 from app import app
 from app import db
-from app.models import Blog,Leader,footer,Projects,about,User
+from app.models import Blog,Leader,footer,Projects,about,User,Contacts
 from flask import Flask,redirect,url_for,render_template,request,session,make_response
 import os
 
@@ -227,7 +227,7 @@ def admin_login():
     if request.method=='POST':
         for user in users:
             if user.username==request.form['username']:
-                if user.password==request.form['password']:
+                if user.password==request.form['password']: 
                     resp = make_response(render_template('profile.html',user=user))
                     resp.set_cookie('loginStatus', str(user.id))
                     return resp
@@ -239,3 +239,20 @@ def admin_login():
     return render_template('/admin/login.html')
     
 
+
+@app.route("/index/contact",methods=['GET','POST'])
+def admin_abou():
+    abouts=Contacts.query.all()
+    if request.method =='POST':
+        
+        ab=Contacts(
+            C_username=request.form['C_username'],
+            C_email=request.form['C_email'],
+            C_wepsite=request.form['C_wepsite'],
+            C_company=request.form['C_company']
+           
+        )
+        db.session.add(ab)
+        db.session.commit()
+        return redirect('/contacts')
+    return render_template('main/Blog.html')

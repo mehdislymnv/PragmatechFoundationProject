@@ -52,3 +52,12 @@ class User(db.Model):
     username=db.Column(db.String(50),unique=True)
     password=db.Column(db.String(50))
    
+
+class Contacts(db.Model):
+    id = db.Column(db.Integer,primary_key=True)
+    C_username=db.Column(db.String(50))
+    C_email=db.Column(db.String(50))
+    C_wepsite=db.Column(db.String(50))
+    C_company=db.Column(db.String(50))
+   
+   
