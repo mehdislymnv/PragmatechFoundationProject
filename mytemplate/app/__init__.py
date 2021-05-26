@@ -18,3 +18,5 @@ from admin.routes import *
 
 from main.routes import *
 
+# auth routs
+from auth.routes import *

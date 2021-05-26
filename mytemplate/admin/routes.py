@@ -6,12 +6,19 @@ import os
 
 from enum import unique
 
+def loginCheck(*param):
+    loginStat=request.cookies.get('loginStatus')
+    if loginStat=='beli':
+        return render_template(*param)
+    else:
+        return redirect(url_for('login'))
 
-
-
-@app.route("/admin/")
+@app.route('/admin/')
 def admin_index():
-    return render_template('admin/index.html')
+    return loginCheck('admin/index.html')
+
+
+
     
 # blog router
 @app.route("/admin/blog",methods=['GET','POST'])
@@ -36,7 +43,7 @@ def admin_blog():
         db.session.add(blog)
         db.session.commit()
         return redirect('/admin/blog')
-    return render_template('/admin/a_blog.html',blogs=blogs)
+    return loginCheck('admin/a_blog.html','blogs=blogs')
 
 @app.route('/delete/<id>')
 def delete_blog(id):
@@ -221,7 +228,7 @@ def admin_abou():
     return render_template('/admin/a_about.html',abouts=abouts )
 
 
-@app.route("/admin/login",methods=['GET','POST'])
+""" @app.route("/admin/login",methods=['GET','POST'])
 def admin_login():
     users=User.query.all()
     if request.method=='POST':
@@ -237,22 +244,9 @@ def admin_login():
 
     
     return render_template('/admin/login.html')
-    
+     """
 
 
-@app.route("/index/contact",methods=['GET','POST'])
-def admin_abou():
-    abouts=Contacts.query.all()
-    if request.method =='POST':
-        
-        ab=Contacts(
-            C_username=request.form['C_username'],
-            C_email=request.form['C_email'],
-            C_wepsite=request.form['C_wepsite'],
-            C_company=request.form['C_company']
-           
-        )
-        db.session.add(ab)
-        db.session.commit()
-        return redirect('/contacts')
-    return render_template('main/Blog.html')
+""" @app.route("/index/contact",methods=['GET','POST'])
+def admin_abou():                                                                                                                                           
+    return render_template('main/Blog.html') """
