@@ -6,10 +6,10 @@ import os
 
 from enum import unique
 
-def loginCheck(*param):
+def loginCheck(*args, **kwargs):
     loginStat=request.cookies.get('loginStatus')
     if loginStat=='beli':
-        return render_template(*param)
+        return render_template(*args, **kwargs)
     else:
         return redirect(url_for('login'))
 
@@ -43,7 +43,7 @@ def admin_blog():
         db.session.add(blog)
         db.session.commit()
         return redirect('/admin/blog')
-    return loginCheck('admin/a_blog.html','blogs=blogs')
+    return loginCheck('admin/a_blog.html', blogs=blogs)
 
 @app.route('/delete/<id>')
 def delete_blog(id):
@@ -89,7 +89,7 @@ def admin_leader():
         db.session.add(lead)
         db.session.commit()
         return redirect('/admin/leader')
-    return render_template('/admin/l.html',leaders=leaders)
+    return loginCheck('/admin/l.html',leaders=leaders)
 
 # leader CRUD
 
@@ -138,7 +138,7 @@ def admin_footer():
         db.session.add(ft)
         db.session.commit()
         return redirect('/admin/footer')
-    return render_template('/admin/footer.html',footers=footers) 
+    return loginCheck('/admin/footer.html',footers=footers) 
 
 
 #footer CRUD
@@ -185,7 +185,7 @@ def admin_Projects():
         db.session.add(proje)
         db.session.commit()
         return redirect('/admin/projects')
-    return render_template('/admin/a_Projects.html',project=project)
+    return loginCheck('/admin/a_Projects.html',project=project)
 #Projects CRUD
 @app.route('/delete_p/<id>')
 def delete_projects(id):
@@ -225,28 +225,36 @@ def admin_abou():
         db.session.add(ab)
         db.session.commit()
         return redirect('/admin')
-    return render_template('/admin/a_about.html',abouts=abouts )
+    return loginCheck('/admin/a_about.html',abouts=abouts )
 
 
-""" @app.route("/admin/login",methods=['GET','POST'])
-def admin_login():
-    users=User.query.all()
-    if request.method=='POST':
-        for user in users:
-            if user.username==request.form['username']:
-                if user.password==request.form['password']: 
-                    resp = make_response(render_template('profile.html',user=user))
-                    resp.set_cookie('loginStatus', str(user.id))
-                    return resp
-                   
-                else:
-                    return redirect('/login')
+""" admin plagin router """
+
+@app.route("/admin/apalgin")
+def admin_palgin():
+    return render_template('admin/plagin_about.html')
 
     
-    return render_template('/admin/login.html')
-     """
 
 
-""" @app.route("/index/contact",methods=['GET','POST'])
-def admin_abou():                                                                                                                                           
-    return render_template('main/Blog.html') """
+
+@app.route("/index/contact",methods= ['GET','POST'])
+def admin_coment():
+    cont=Contacts.query.all()
+    if request.method=='POST':
+        cts=Contacts(
+            C_username=request.form['C_username'],
+            C_email=request.form['C_email'],
+            C_wepsite=request.form['C_wepsite'],
+            C_company=request.form['C_company'],
+            C_comment=request.form['C_comment'],
+
+        )
+        db.session.add(cts)
+        db.session.commit()
+        
+        return redirect('/index/contact')
+    return render_template('main/Contacts.html')
+
+
+#foorer router

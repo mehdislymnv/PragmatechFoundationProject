@@ -1,5 +1,5 @@
 from app import app
-from app.models import Blog,Leader, Projects,footer
+from app.models import Blog,Leader, Projects,footer,Contacts
 from flask import Flask,redirect,url_for,render_template,request
 
 
@@ -41,3 +41,4 @@ def site_projects():
     project=Projects.query.all()
     footers=footer.query.all()
     return render_template('main/Projects.html',project=project,footers=footers)
+

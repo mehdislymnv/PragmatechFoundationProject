@@ -335,7 +335,7 @@ textarea{
 .form-button-message{
 	
     display: inline-block;
-    width: 182px;
+    width: 100% !important;
     padding: 14px 0;
    
     color: white;

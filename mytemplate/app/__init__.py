@@ -20,3 +20,5 @@ from main.routes import *
 
 # auth routs
 from auth.routes import *
+
+db.create_all()

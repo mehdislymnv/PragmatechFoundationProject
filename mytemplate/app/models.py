@@ -59,5 +59,7 @@ class Contacts(db.Model):
     C_email=db.Column(db.String(50))
     C_wepsite=db.Column(db.String(50))
     C_company=db.Column(db.String(50))
+    C_comment=db.Column(db.String(100))
+   
    
    
